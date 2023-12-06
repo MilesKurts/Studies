@@ -1,10 +1,13 @@
 import flet as ft
 
 def main(page):
-    def button_clicked(e):
-        page.add(ft.Text("Clicked!"))
+    def add_clicked(e):
+        page.add(ft.Checkbox(label=new_task.value))
+        new_task.value = ""
+        new_task.focus()
+        new_task.update()
 
-    page.add(ft.ElevatedButton(text="Click me", on_click=button_clicked))
+    new_task = ft.TextField(hint_text="What's need to be done?", width=300)
+    page.add(ft.Row([new_task, ft.ElevatedButton("Add", on_click=add_clicked )]))
 
-
-ft.app(target=main)
+ft.app(target=main) 
