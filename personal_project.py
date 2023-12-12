@@ -25,5 +25,10 @@ def main(page):
         width=300,
         height=100,
     )
-    page.add(c1, c2)
+    btn = ft.ElevatedButton(
+        "Click me",
+        width=150,
+        height=150,
+    )
+    page.add(c1, c2, btn)
 ft.app(target=main)
