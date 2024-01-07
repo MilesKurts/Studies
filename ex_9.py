@@ -4,7 +4,7 @@ i = 0
 while i < 10:
     i += 1
     r = i * n1
-    print('{}  x  {} = {}'.format(n1, i, r))
+    print('{}  x  {:2} = {}'.format(n1, i, r))
     
     
     
