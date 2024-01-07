@@ -4,3 +4,5 @@ print(n1.isspace(), '\n')
 print(n1.isnumeric(), '\n')
 print(n1.isalpha(), '\n')
 print(n1.isalnum(), '\n')
+print(n1.isupper(), '\n')
+
