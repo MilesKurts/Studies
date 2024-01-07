@@ -7,4 +7,3 @@ while i < 10:
     print('{}  x  {:2} = {}'.format(n1, i, r))
     
     
-    
