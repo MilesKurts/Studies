@@ -1,0 +1,8 @@
+nome = str(input('Insert your name:\n')).strip()
+print('Analisys your name...')
+print('Your name upper is {}'.format(nome.upper()))
+print('Your name in lower is {}'.format(nome.lower()))
+print('Your name have {} letters'.format(len(nome)-nome.count(" ")))
+#print("Your first name has {} letter".format(nome.find(" ")))
+split_ = nome.split()
+print('Your first name is {} and it has {} letters'.format(split_[0], len(split_[0])))
