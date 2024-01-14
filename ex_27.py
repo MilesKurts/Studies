@@ -1,0 +1,5 @@
+name = str(input("Insert your full name: ")).strip()
+print("It's a pleasure to know you {}".format(name))
+divided = name.split()
+print("Your first name is {}".format(divided[0]))
+print("And Your last name is {}".format(divided[len(divided)-1]))
