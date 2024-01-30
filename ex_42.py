@@ -10,11 +10,5 @@ if x < z + y and z < x +y and y<z+x:
         print("Escaleno")
     else:
         print("ISOSCELES")
-elif z =="":
-        print("error")
-elif y =="":
-        print("error")
-elif x =="":
-        print("error")
 else:
     print("Não pode ser um triangulo!")
