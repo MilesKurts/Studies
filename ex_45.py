@@ -29,5 +29,3 @@ if comp == 2:
         print("Voce Perdeu")
     elif jog == 2:
         print("Empate")
-    else:
-        print("ERROR!")
