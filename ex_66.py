@@ -5,4 +5,4 @@ while True:
         break
     s += n
     i += 1
-print(f"There was typed {i} number, and their sum are {s}")
+print(f"There was typed {i} number(s), and their sum are {s}")
