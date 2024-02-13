@@ -6,7 +6,7 @@ while True:
     s = " "
     while s not in "MF":
         s = str(input("Qual o sexo da pessoa? (M/F)")).strip().upper()[0]
-    if s in "Ff" and i > 20:
+    if s in "Ff" and i < 20:
         m20 +=1
     elif s in "Mm":
         h +=1
@@ -19,4 +19,4 @@ while True:
         break
     else:
         pass
-print(f"AQUI TEMOS {m20} mulher(es) com mais de 20 anos, {h} homem(ns) e {p18} pessoas com mais de 18 anos")
+print(f"AQUI TEMOS {m20} mulher(es) com menos de 20 anos, {h} homem(ns) e {p18} pessoas com mais de 18 anos")
