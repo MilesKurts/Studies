@@ -1,118 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miles Kurts</title>
-    <link rel="stylesheet" href="style.css">
-    <script type="text/python" src="functions_py.py"></script>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script src="functions.js"></script>
-</head>
-<body>
-    <hr id="home">
-    <!--navegating that will guide the user  the site-->
-        <nav id="nav1" class="menu">
-        <ul type="none">
-            <li onmouseover="change('pics/icon_home2.png')" onmouseout="change('pics/icon_home.png')"><a href="#home"><img id="topics" src="pics/icon_home.png" alt="Home" ></a></li>
-            <li onmouseover="change2('pics/icon_personal2.png')" onmouseout="change2('pics/icon_personal.png')"><a href="#me"><img id="topics2" src="pics/icon_personal.png" alt="Personal"></a></li>
-            <li onmouseover="change4('pics/icon_education2.png')" onmouseout="change4('pics/icon_education.png')"><a href="#page2"><img id="topics4" src="pics/icon_education.png" alt=""></a></li>
-            <li onmouseover="change5('pics/icon_portfolio2.png')" onmouseout="change5('pics/icon_portfolio.png')"><a href="#page3"><img id="topics5" src="pics/icon_portfolio.png" alt=""></a></li>
-            <li onmouseover="change7('pics/skillshare2.png')" onmouseout="change7('pics/skillshare.png')"><a href="#page5"><img id="topics7" src="pics/skillshare.png" alt=""></a></li>
-            <li onmouseover="change6('pics/icon_contacts2.png')" onmouseout="change6('pics/icon_contacts.png')"><a href="#page4"><img id="topics6" src="pics/icon_contacts.png" alt=""></a></li>
-        </ul>
-            </nav>
-    <header id="hi">
-        <div id="div1">
-        <img id="pic_profile" src="pics/pic_profile.png" alt="">
-        <h1>Hi I'm Miles Kurts</h1>
-        <h2>web designer<br/>Developer</h2>
-        <p>I'm a Brazilian front-end, web designer  Developer. I'm looking for my first job in programming to prove and show my skills and dedication. Learning more then i can and using all that i know to help the company grow up and improve more and more!</p>
-        <button id="b_about_me" type="submit">About Me</button>
-        <button id="_cv" type="submit"> <img src="pics/_download.png" id="_cvimage" alt="">Download CV</button>
-    </div>
-</header>
-<hr id="me">
-<h3 class="title1">About Me</h3>
-<article>
-    <table id="t_about_me">
-        <tr><td class="td1">Name:</td><td class="td2">Mauricio</td><td class="td5">Last Name:</td><td class="td6">Rosa</td></tr>
-        <tr><td class="td1">D.O.B:</td><TD class="td2">May 10th, 2001</TD><td class="td5">Postal code:</td><td class="td6">13422-570</td></tr>
-        <tr><td class="td1">Nationality:</td><td class="td2">Brazilian</td><td class="td5">City of Born:</td><td class="td6">Piracicaba - São Paulo</td></tr>
-        <tr><td class="td1">Marital Status:</td><td class="td2">Single</td><td class="td5">Languages:</td><td class="td6">Portuguese & English</td></tr>
-        <tr><td class="td1">Gender:</td><td class="td2">Male</td></tr>
-    </table>
-</article>
-    <hr id="page2">
-    <div id="education_page">
-    <h3 class="title1">Education</h3>
-    <div id="education" style="height: 200px;"></div>
-    <h3 class="title1">Courses</h3>
-    <table id="t_education">
-        <tr><td class="td3">Course:</td><td class="td3">Workload:</td><td class="td3">School:</td></tr>
-        <tr><td class="td4">English Course</td><td class="td4">150hrs</td><td class="td4">Fluency Academy by Rhavi Carneiro</td></tr>
-        <tr><td class="td4">Basic Computing</td><td class="td4">75 hrs</td><td class="td4">Senac Piracicaba</td></tr>
-        <tr><td class="td4">HTML5</td><td class="td4">40hrs</td><td class="td4">Curso em Video</td></tr>
-        <tr><td class="td4">Algorithms</td><td class="td4">40hrs</td><td class="td4">Curso em Video</td></tr>
-        <tr><td class="td4">Basic PHP</td><td class="td4">40hrs</td><td class="td4">Curso em Video</td></tr>
-        <tr><td class="td4">MySQL</td><td class="td4">40hrs</td><td class="td4">Curso em Video</td></tr>
-        <tr><td class="td4">Python</td><td class="td4">40hrs</td><td class="td4">Curso em Video</td></tr>
-        <tr><td class="td4">Hardware</td><td class="td4">40hrs</td><td class="td4">Curso em video</td></tr>
-    </table>
-    </div>
-    <hr id="page3">
-    <h2 class="title1">Work History</h2>
-    <div id="_defensoria">
-        <h1 class="">Trainee - Piracicaba's Public Defense</h1>
-        <h4>2016/2017 </h4>
-        <p class="text_s">Sort documents out;<br>Putting the documents in the right places;<BR> Taking care of keeping the documents;<br>Separate and take the documents to their proper places;</p>
-    </div>
-    <img id="img_defen" src="pics/defensoria.jpg" alt="">
-    <a id="a_defen" class="a_color" href="https://www.defensoria.sp.def.br">Public Defense</a>
-    <aside id="_formar">
-        <h1>Apprentice -Instituto Formar / Startec</h1>
-        <h4>2018/2019</h4>
-        <p class="text_s">Calculate the price's service;<br>Classes with good professionals about 'how to get a good job, making a good curriculum';<BR>Program a machine for laser engraving parts;<br>Shipment of parts with security;</p>
-    </aside>
-    <img id="pic_formar" src="pics/_formar.jpg" alt="">
-    <a id="a_formar" class="a_color" href="https://www.institutoformar.org/instituto-formar-promove-oficinas-culturais-em-homenagem-aos-100-anos-da-semana-de-arte-moderna/">Formar</a>
-    <div id="mundo_ma">
-        <h1>Web designer - Mundo da ma</h1>
-        <h4>2020</h4>
-        <p class="">Making sites using HTML5 & CSS3;<br>Learning to solve website problems;<BR>Making intuitives and beautiful web sites;</p>
-    </div>
-    <img id="_mah" src="pics/_mah.png" alt="">
-    <a id="a_mah" class="a_color" href="https://www.mundodama.com.br">Mundo Da Má</a>
-    <aside id="_drogal">
-        <h3>Clerk - Drogal</h3>
-        <h4>2021/Now</h4>
-        <p>Calculate the price's service;<br>Classes with good professionals about 'how to get a good job, making a good curriculum';<BR>Program a machine for laser engraving parts;<br>Shipment of parts with security;</p>
-    </aside>
-    <div id="drogals">
-    <img id="_drogal" src="pics/_drogal.jpg" alt="">
-    <a id="a_drogal" class="a_color" href="https://www.drogal.com.br/mamae-bebe/?map=c&sort=maior-desconto&gclid=CjwKCAjw5_GmBhBIEiwA5QSMxNjeMHgdH6mm5b6i-lZ5BN6-4KdSclNGf9g8iHpM2XlMwsYO-cwQLBoCrVMQAvD_BwE">Drogal</a>
-</div>
-    <hr id="page5">
-    <div id="charts_cont">
-        <h2 class="title1">Skills</h2>
-    <div id="skills_chart"></div>
-</div>
-    <hr id="page4">    
-    <div id="contacts">
-        <h2 class="title1">Contact me:</h2>
-        <img src="pics/_email.png" alt="">
-        <a class="_emails" href="">milesheremau@gmail.com</a> <br>
-        <img src="pics/_mobile.png" alt="">
-        <a class="_cellphone" href="">+5519999459304</a>
-        <aside>
-            <form id="_sends" action="name">
-                <input class="type1" type="text" name="t_name" id="_name" placeholder="Nome">
-                <input class="type1" type="text" name="t_email" id="_email" placeholder="E-mail"><br>
-                <input class="type2" type="text" name="t_subject" id="_subject" placeholder="Subject"><br>
-                <input class="type3" type="text" name="t_urmessage" id="_urmessage" placeholder="Message"><br>
-                <input  type="button" id="send_button" class="send_button" value="Send" placeholder="Send">
-            </form>
-        </aside>
-    </div>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
 </html>
