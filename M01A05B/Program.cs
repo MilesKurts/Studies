@@ -10,11 +10,9 @@ namespace M01A05B
     {
         static void Main(string[] args)
         {
-            byte idade = 25;
-            short publico = 25239;
-            float media = 4.5f;
-            decimal estrela = 4.9847373723m;
-            Console.WriteLine(estrela);
+            int inte;
+            inte = 0;
+            Console.WriteLine(inte);
             Console.ReadKey();
         }
     }
