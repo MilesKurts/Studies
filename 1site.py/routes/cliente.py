@@ -22,21 +22,21 @@ def lista_clientes():
     '''Listar clientes'''
     return render_template('lista_clientes.html', clientes=CLIENTES)
 
-@cliente_route.route("/", methods=['POST'])
+@cliente_route.route('/', methods=['POST'])
 def inserir_cliente():
-    '''Iserir dados do cliente no banco de dados'''
-
+    """ inserir os dados do cliente """
+    
     data = request.json
     
     novo_usuario = {
-        'id': len(CLIENTES)+1,
-        'nome': data['nome'],
-        'email': data['email'],
+        "id": len(CLIENTES) + 1,
+        "nome": data['nome'],
+        "email": data['email'],
     }
 
     CLIENTES.append(novo_usuario)
 
-    return render_template('item_cliente.html', cliente='novo_usuario')
+    return render_template('item_cliente.html', cliente=novo_usuario)
     
 
 @cliente_route.route("/new")
@@ -47,19 +47,41 @@ def form_cliente():
 @cliente_route.route("/<int:cliente_id>")
 def detalhe_cliente(cliente_id):
     '''Exibir detalhes do cliente'''
-    return render_template('detalhe_cliente.html')
+
+    cliente = list(filter(lambda c: c['id'] ==  cliente_id, CLIENTES))[0]
+    return render_template('detalhe_cliente.html', cliente=cliente)
 
 @cliente_route.route("/<int:cliente_id>/edit")
 def form_edit_cliente(cliente_id):
     '''Formulario para editar um cliente'''
-    return render_template('form_edit_cliente.html')
+    cliente = None
+    for c in CLIENTES:
+        if c['id'] == cliente_id:
+            cliente = c
+    return render_template('form_cliente.html', cliente=cliente)
     
 @cliente_route.route("/<int:cliente_id>/update", methods=['PUT'])
 def atualizar_cliente(cliente_id):
+
+    data = request.json
+    #obter dados do formulario de edição
     '''Atualizar informações do cliente cliente'''
-    pass
+
+    #obter usuarios pelo id
+    for c in CLIENTES:
+        if c['id'] == cliente_id:
+            c['nome'] = data['nome']
+            c['email'] = data['email']
+
+            cliente_editado = c
+    
+    #editar usuario
+    return render_template('item_cliente.html', cliente=cliente_editado)
 
 @cliente_route.route("/<int:cliente_id>/update", methods=['DELETE'])
 def deletar_cliente(cliente_id):
+    global CLIENTES
     '''deletar um cliente'''
-    pass
+    CLIENTES = [ c for c in CLIENTES if c['id'] != cliente_id ]
+
+    return {'deleted': "ok"}
