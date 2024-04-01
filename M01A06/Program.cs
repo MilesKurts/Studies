@@ -10,7 +10,9 @@ namespace M01A06
     {
         static void Main(string[] args)
         {
-            string escola = "Estudonauta"; 
+            //Creating constants(variables that doesn't chnage!!
+
+            const string escola = "Estudonauta"; 
 
             Console.WriteLine("Eu estudo no "+escola);
             Console.WriteLine("O valor de pi é "+ Math.PI);
