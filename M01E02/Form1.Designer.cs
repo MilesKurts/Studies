@@ -43,6 +43,7 @@
             this.label1.Size = new System.Drawing.Size(93, 39);
             this.label1.TabIndex = 0;
             this.label1.Text = "MEU";
+            this.label1.Visible = false;
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
@@ -54,6 +55,7 @@
             this.label2.Size = new System.Drawing.Size(140, 39);
             this.label2.TabIndex = 1;
             this.label2.Text = "BRASIL";
+            this.label2.Visible = false;
             // 
             // label3
             // 
@@ -64,6 +66,7 @@
             this.label3.Size = new System.Drawing.Size(224, 39);
             this.label3.TabIndex = 2;
             this.label3.Text = "BRASILEIRO";
+            this.label3.Visible = false;
             // 
             // button1
             // 
