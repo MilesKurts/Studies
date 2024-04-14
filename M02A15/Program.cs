@@ -13,6 +13,7 @@ namespace M02A15
             Console.WriteLine(26 & 12);
             Console.WriteLine(26 | 12);
             Console.WriteLine(26 ^ 12);
+            Console.WriteLine(~26);
             Console.ReadKey();
         }
     }
