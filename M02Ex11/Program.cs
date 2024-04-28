@@ -19,7 +19,6 @@ namespace M02Ex11
             Console.WriteLine($"O valor de {op1} ~ {op2} é {~op1} e {~op2}");
             Console.WriteLine($"O valor de {op1} >> {op2} é {op1 >> op2}");
             Console.WriteLine($"O valor de {op1} << {op2} é {op1 << op2}");
-
             Console.ReadKey();
         }
     }
