@@ -11,7 +11,7 @@ namespace e_mail_2
     {
         static void Main(string[] args)
         {
-            var outlook = new Email("smtp.office365.com", "mauriciojuniorrosa8@gmail.com", "Eunovo123");
+            var outlook = new Email("smtp.office365.com", "", "");
             outlook.SendEmail(new List<string>
             {
                 "milesheremau@gmail.com"
