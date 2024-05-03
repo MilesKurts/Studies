@@ -99,6 +99,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M02Ex11", "M02Ex11\M02Ex11.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "email_3", "email_3\email_3.csproj", "{79F96AC1-9434-4C31-A4CF-12CD21EF8EB2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "fullstackweb_course", "fullstackweb_course\fullstackweb_course.csproj", "{5DDF3278-7670-4891-A349-C000822930C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -297,6 +299,10 @@ Global
 		{79F96AC1-9434-4C31-A4CF-12CD21EF8EB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{79F96AC1-9434-4C31-A4CF-12CD21EF8EB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{79F96AC1-9434-4C31-A4CF-12CD21EF8EB2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DDF3278-7670-4891-A349-C000822930C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DDF3278-7670-4891-A349-C000822930C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DDF3278-7670-4891-A349-C000822930C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DDF3278-7670-4891-A349-C000822930C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
