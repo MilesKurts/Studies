@@ -33,6 +33,18 @@ namespace fullstackcourse_2
                 string title = "OK";
                 MessageBox.Show(message2,title,MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             }
+            btn1.Text = "changed";
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("hello!");
+            button1.Text = "OK";
+        }
+
+        private void button1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            button1.Text = "Enter";
         }
     }
 }
