@@ -71,10 +71,7 @@ namespace fullstackcourse_2
                 e.Handled = true;
             }
 
-            if(((sender as TextBox).Text.IndexOf(".")> -1))
-            {
-                e.Handled = true;
-            }
+
         }
     }
 }
