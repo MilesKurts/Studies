@@ -46,5 +46,35 @@ namespace fullstackcourse_2
         {
             button1.Text = "Enter";
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            label1.Text = "First label";
+            label1.BackColor = Color.Red;
+            label1.ForeColor = Color.White;
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != '.')
+                {
+                e.Handled = true;
+            }
+
+            if(((sender as TextBox).Text.IndexOf(".")> -1))
+            {
+                e.Handled = true;
+            }
+        }
     }
 }
