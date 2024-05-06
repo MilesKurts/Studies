@@ -34,6 +34,7 @@ namespace fullstackcourse_2
                 MessageBox.Show(message2,title,MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             }
             btn1.Text = "changed";
+            comboBox1.Items.Add("Thursday");
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -71,6 +72,11 @@ namespace fullstackcourse_2
                 e.Handled = true;
             }
 
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
         }
     }
