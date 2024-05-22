@@ -15,7 +15,7 @@ namespace course_for
             {
                 for(int k = 0; k < 8; k++)
                 {
-                    ivalue += "i: "+i+" k "+k+ Environment.NewLine;
+                    text_box.Text = ivalue;
                 }
                 
             }
