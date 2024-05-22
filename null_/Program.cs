@@ -18,6 +18,7 @@ namespace null_
             Console.WriteLine($"A variavel tem valor? {num.HasValue}");
             Console.WriteLine($"a VARIÁVEL X TEM VALOR? {x} ");
             Console.ReadKey();
+            Console.WriteLine($"?? = Operador de coalecência nula");
         }
     }
 }
