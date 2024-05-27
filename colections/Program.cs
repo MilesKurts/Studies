@@ -22,10 +22,9 @@ namespace colections
             int j = 0;
             for (i = 0; i < 2; i++)
             {
-                Console.WriteLine(nova_[j,i]+" ");
-                for (j = 0; j < 2; j++)
+                for (j = 0; j <= 2; j++)
                 {
-                    Console.WriteLine(nova_[j,i]);
+                    Console.WriteLine(nova_[i,j]);
                 }
             }
             Console.ReadKey();
