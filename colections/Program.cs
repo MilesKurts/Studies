@@ -10,14 +10,24 @@ namespace colections
     {
         static void Main(string[] args)
         {
-            int num = 0;
-
-            int[] numbers = new int[5];
-            numbers[0] = 1;
-            numbers[1] = 2;
-            numbers[2] = 3;
-            numbers[3] = 4;
-            Console.WriteLine(numbers[3]);
+            
+            int[,] nova_ = new int[2,3];
+            nova_[0,0] = 1;
+            nova_[0,1] = 2;
+            nova_[0,2] = 3;
+            nova_[1,0] = 4;
+            nova_[1,1] = 5;
+            nova_[1,2] = 6;
+            int i = 0;
+            int j = 0;
+            for (i = 0; i < 2; i++)
+            {
+                Console.WriteLine(nova_[j,i]+" ");
+                for (j = 0; j < 2; j++)
+                {
+                    Console.WriteLine(nova_[j,i]);
+                }
+            }
             Console.ReadKey();
         }
     }
