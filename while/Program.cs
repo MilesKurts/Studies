@@ -10,11 +10,19 @@ namespace @while
     {
         static void Main(string[] args)
         {
+            #region For structure.
             int valor = 0;
-            while (valor<12)
+            do
             {
-                Console.WriteLine($"O valor é {valor}");
                 valor++;
+                Console.WriteLine($" O valor é {valor}");
+            } while (valor < 10);
+            #endregion
+
+            string[] nomes = { "Gabriel", "Danny", "Arthur", "joão" };
+            foreach (string nome in nomes)
+            {
+                Console.WriteLine(nome);
             }
             Console.ReadKey();
         }
