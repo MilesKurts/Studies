@@ -125,6 +125,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "colections", "colections\co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "while", "while\while.csproj", "{2F9F805A-7BC8-463E-B295-80C1836AE18A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassesObjetos", "ClassesObjetos\ClassesObjetos.csproj", "{4F784A42-1A48-473F-8D40-EE283940BCDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetodosDasClasses", "MetodosDasClasses\MetodosDasClasses.csproj", "{541611E4-239D-42D7-B504-8BA98ADC678D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -375,6 +379,14 @@ Global
 		{2F9F805A-7BC8-463E-B295-80C1836AE18A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F9F805A-7BC8-463E-B295-80C1836AE18A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F9F805A-7BC8-463E-B295-80C1836AE18A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F784A42-1A48-473F-8D40-EE283940BCDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F784A42-1A48-473F-8D40-EE283940BCDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F784A42-1A48-473F-8D40-EE283940BCDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F784A42-1A48-473F-8D40-EE283940BCDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{541611E4-239D-42D7-B504-8BA98ADC678D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{541611E4-239D-42D7-B504-8BA98ADC678D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{541611E4-239D-42D7-B504-8BA98ADC678D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{541611E4-239D-42D7-B504-8BA98ADC678D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
