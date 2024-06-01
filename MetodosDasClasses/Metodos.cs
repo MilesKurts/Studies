@@ -23,5 +23,16 @@ namespace MetodosDasClasses
         {
             Console.WriteLine($"Meu nome {nome} e tenho {idade} de idade");
         }
+        public void AumentarValor(int valor)
+        {
+            valor += 10;
+            Console.WriteLine($"O valor final (por valor) é: {valor}");
+        }
+        //Passagem de parametro por referencia
+        public void AumentarRef(ref int valor)
+        {
+            valor += 10;
+            Console.WriteLine($"O valor final (por referencia) é: {valor}");
+        }
     }
 }

@@ -14,6 +14,16 @@ namespace MetodosDasClasses
             m.Cumprimentar();
             m.Somar(10, 5);
             m.Apresentar("Gabriel", 35);
+
+            int valor1 = 100;
+            int valor2 = 100;
+
+            m.AumentarValor(valor1);
+            m.AumentarRef(ref valor2);
+
+            Console.WriteLine($"Valor 1 :{valor1}");
+            Console.WriteLine($"Valor 2 :{valor2}(Por referencia o valor da variavel altera tambem!)");
+            
             Console.ReadKey();
 
         }
@@ -22,5 +32,8 @@ namespace MetodosDasClasses
         {
             Console.WriteLine("Meu nome é "+nome+" e tenho "+idade+ " de idade.");
         }
+
+        //Passagem de parametro por valor
+        
     }
 }
