@@ -32,7 +32,35 @@ namespace MetodosDasClasses
         public void AumentarRef(ref int valor)
         {
             valor += 10;
-            Console.WriteLine($"O valor final (por referencia) é: {valor}");
+            Console.WriteLine($"O valor final (por referencia ) é: {valor}");
+        }
+        
+        //metodo com retorno de valores
+
+        public string MontaNome(string nome, string sobrenome)
+        {
+            string nomeCompleto = nome + " " + sobrenome;
+            return nomeCompleto;
+        }
+        public int CodigoChar(char caractere)
+        {
+            int codigo = caractere;
+            return codigo;
+        }
+        public double ValorPi()
+        {
+            return 3.1415;
+        }
+
+        //sobrecarga de metodos
+        public void Cumprimentar(string nome)
+        {
+            Console.WriteLine("Olá, " + nome);
+        }
+        public void Cumprimentar(string nome, int hora)
+        {
+            string mensagem = hora <12? "Bom dia " + nome : "Boa Tarde "+nome;
+            Console.WriteLine(mensagem );
         }
     }
 }
