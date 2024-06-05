@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Heranca
 {
-    internal class Bicicleta
+    internal class Bicicleta : Veiculo
     {
      
 

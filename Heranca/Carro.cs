@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Heranca
 {
-    internal class Carro
+    internal class Carro : Veiculo
     {
 
         public int VelocidadeMaxima {  get; set; }
