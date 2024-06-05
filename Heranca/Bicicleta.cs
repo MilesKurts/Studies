@@ -14,5 +14,9 @@ namespace Heranca
         {
 
         }
+        public override void Acelerar()
+        {
+            Console.WriteLine("Acelerou a bicicleta!");
+        }
     }
 }

@@ -8,7 +8,10 @@ namespace Heranca
 {
     internal class Carro : Veiculo
     {
-
+        public override void Acelerar()
+        {
+            Console.WriteLine("Acelerou o carro!");
+        }
         public int VelocidadeMaxima {  get; set; }
 
         public void LigarMotor()
