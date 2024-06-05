@@ -137,6 +137,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetodoConstrutor", "MetodoC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estaticas", "Estaticas\Estaticas.csproj", "{E0456879-C724-4BC0-8059-BD5F306422FB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Propriedades", "Propriedades\Propriedades.csproj", "{E8B2D69B-A2E1-4D3F-AB6F-1E36277B5195}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -411,6 +413,10 @@ Global
 		{E0456879-C724-4BC0-8059-BD5F306422FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0456879-C724-4BC0-8059-BD5F306422FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0456879-C724-4BC0-8059-BD5F306422FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8B2D69B-A2E1-4D3F-AB6F-1E36277B5195}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8B2D69B-A2E1-4D3F-AB6F-1E36277B5195}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8B2D69B-A2E1-4D3F-AB6F-1E36277B5195}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8B2D69B-A2E1-4D3F-AB6F-1E36277B5195}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

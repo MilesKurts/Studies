@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E0456879-C724-4BC0-8059-BD5F306422FB}</ProjectGuid>
+    <ProjectGuid>{E8B2D69B-A2E1-4D3F-AB6F-1E36277B5195}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Estaticas</RootNamespace>
-    <AssemblyName>Estaticas</AssemblyName>
+    <RootNamespace>Propriedades</RootNamespace>
+    <AssemblyName>Propriedades</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,11 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Matematica.cs" />
-    <Compile Include="PessoaAtributos.cs" />
-    <Compile Include="PessoaMetodos.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Teste.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
