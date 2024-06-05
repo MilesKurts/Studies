@@ -9,7 +9,7 @@ namespace Propriedades
     internal class Teste
     {
         private string _nome;
-        private string Sobrenome { get; } = "Artigas";
+        public string Sobrenome { get; } = "Artigas";
 
         private int _idade;
 
@@ -45,8 +45,8 @@ namespace Propriedades
         }
         public void Apresentar()
         {
-            if (_nome != "") 
+            if (_nome != "")
                 Console.WriteLine($"seja bem vindo, {_nome}");
-        
+        }
     }
 }
