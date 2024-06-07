@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{84D2FEB5-65DE-41CA-9BD2-766AEE5AA001}</ProjectGuid>
+    <ProjectGuid>{B21A1DD0-E5F5-4E9F-93FA-D86333CD9B4D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Polimorfismo</RootNamespace>
-    <AssemblyName>Polimorfismo</AssemblyName>
+    <RootNamespace>MediaGeralPOO</RootNamespace>
+    <AssemblyName>MediaGeralPOO</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,8 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes.cs" />
-    <Compile Include="Conta.cs" />
+    <Compile Include="Aluno.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
