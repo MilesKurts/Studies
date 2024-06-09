@@ -149,6 +149,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polimorfismo", "Polimorfism
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaGeralPOO", "MediaGeralPOO\MediaGeralPOO.csproj", "{B21A1DD0-E5F5-4E9F-93FA-D86333CD9B4D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recursividade", "Recursividade\Recursividade.csproj", "{E593B292-1C7F-4249-8BE2-301976107DB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetodoMain", "MetodoMain\MetodoMain.csproj", "{8D4C9C65-4C09-4F0A-B7C2-C2BEE8E5B226}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -447,6 +451,14 @@ Global
 		{B21A1DD0-E5F5-4E9F-93FA-D86333CD9B4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B21A1DD0-E5F5-4E9F-93FA-D86333CD9B4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B21A1DD0-E5F5-4E9F-93FA-D86333CD9B4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E593B292-1C7F-4249-8BE2-301976107DB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E593B292-1C7F-4249-8BE2-301976107DB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E593B292-1C7F-4249-8BE2-301976107DB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E593B292-1C7F-4249-8BE2-301976107DB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D4C9C65-4C09-4F0A-B7C2-C2BEE8E5B226}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D4C9C65-4C09-4F0A-B7C2-C2BEE8E5B226}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D4C9C65-4C09-4F0A-B7C2-C2BEE8E5B226}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D4C9C65-4C09-4F0A-B7C2-C2BEE8E5B226}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
