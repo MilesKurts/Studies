@@ -11,6 +11,17 @@ namespace MetodoMain
         static void Main(string[] args)
         {
             string nome = args[0];
+            string senha = "abc123";
+
+            if (senha != args[1])
+            {
+                Console.WriteLine("Acesso negado!");
+            }
+            else
+            {
+                Console.WriteLine("Ola "+ args[0]);
+            }
+
 
             Console.WriteLine($"Ola {nome}");
 
