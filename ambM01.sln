@@ -153,6 +153,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Recursividade", "Recursivid
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetodoMain", "MetodoMain\MetodoMain.csproj", "{8D4C9C65-4C09-4F0A-B7C2-C2BEE8E5B226}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FatorialRecursiva", "FatorialRecursiva\FatorialRecursiva.csproj", "{593B49C2-15E6-4D1A-9816-49F7D0F76BC3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teste", "Teste\Teste.csproj", "{1B3871A5-29BD-4A3D-B692-83ACE4FD187A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -459,6 +463,14 @@ Global
 		{8D4C9C65-4C09-4F0A-B7C2-C2BEE8E5B226}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D4C9C65-4C09-4F0A-B7C2-C2BEE8E5B226}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D4C9C65-4C09-4F0A-B7C2-C2BEE8E5B226}.Release|Any CPU.Build.0 = Release|Any CPU
+		{593B49C2-15E6-4D1A-9816-49F7D0F76BC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{593B49C2-15E6-4D1A-9816-49F7D0F76BC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{593B49C2-15E6-4D1A-9816-49F7D0F76BC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{593B49C2-15E6-4D1A-9816-49F7D0F76BC3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B3871A5-29BD-4A3D-B692-83ACE4FD187A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B3871A5-29BD-4A3D-B692-83ACE4FD187A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B3871A5-29BD-4A3D-B692-83ACE4FD187A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B3871A5-29BD-4A3D-B692-83ACE4FD187A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
