@@ -23,12 +23,12 @@ namespace SistemaCadastro
             comboEC.Items.Add("Viuvo");
             comboEC.Items.Add("Separado");
             comboEC.SelectedItem = 0;
-
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            comboEC.SelectedItem = 0;
+            comboEC.SelectedIndex = 0;
+            pessoas.Clear();
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
@@ -53,17 +53,17 @@ namespace SistemaCadastro
                 txtTelefone.Focus();
                 return;
             }
-             string sexo;
+             char sexo;
             if (radioM.Checked)
             {
-                sexo = "M";
+                sexo = 'M';
             }else if (radioF.Checked)
             {
-                sexo = "F";
+                sexo = 'F';
             }
             else
             {
-                sexo = "O";
+                sexo = 'O';
             }
 
             Pessoa p = new Pessoa();
@@ -86,13 +86,15 @@ namespace SistemaCadastro
 
 
             btnLimpar_Click(btnLimpar, EventArgs.Empty);
-
+            comboEC.SelectedItem = 0;
             Listar();
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
         {
-            int  indice = 0;
+            int  indice = lista.SelectedIndex;
+            pessoas.RemoveAt(indice);
+            Listar();
         }
 
         private void btnLimpar_Click(object sender, EventArgs e)
@@ -107,6 +109,36 @@ namespace SistemaCadastro
             {
                 lista.Items.Add(p.Nome);
             }
+        }
+
+        private void comboEC_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lista_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            int indice = lista.SelectedIndex;
+            Pessoa p = pessoas[indice];
+
+            txtNome.Text = p.Nome;
+            txtData.Text = p.DataNascimento;
+            comboEC.SelectedItem = p.EstadoCivil;
+            txtTelefone.Text = p.Telefone;
+            checkCasa.Checked = p.CasaPropria;
+            checkVeiculo.Checked = p.Veiculo;
+
+            switch (p.Sexo) {
+                case 'M':
+                    radioM.Checked = true;
+                    break;
+                case 'F':
+                    radioF.Checked = true;
+                    break;
+                default:
+                    radioO.Checked = true;
+                    break ;
+                        }
         }
     }
 }

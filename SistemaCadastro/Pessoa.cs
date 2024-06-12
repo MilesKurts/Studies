@@ -14,7 +14,7 @@ namespace SistemaCadastro
         public string Telefone { get; set; }
         public bool CasaPropria {  get; set; }
         public bool Veiculo { get; set; }
-        public string Sexo { get; set; }
+        public char Sexo { get; set; }
 
     }
 }

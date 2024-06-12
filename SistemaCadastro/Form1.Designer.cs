@@ -113,6 +113,7 @@
             this.comboEC.Name = "comboEC";
             this.comboEC.Size = new System.Drawing.Size(354, 32);
             this.comboEC.TabIndex = 6;
+            this.comboEC.SelectedIndexChanged += new System.EventHandler(this.comboEC_SelectedIndexChanged);
             // 
             // txtTelefone
             // 
@@ -198,6 +199,7 @@
             this.lista.Name = "lista";
             this.lista.Size = new System.Drawing.Size(544, 220);
             this.lista.TabIndex = 11;
+            this.lista.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lista_MouseDoubleClick);
             // 
             // btnCadastrar
             // 
@@ -271,7 +273,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.DateTimePicker txtData;
-        private System.Windows.Forms.ComboBox comboEC;
         private System.Windows.Forms.MaskedTextBox txtTelefone;
         private System.Windows.Forms.CheckBox checkCasa;
         private System.Windows.Forms.CheckBox checkVeiculo;
@@ -283,6 +284,7 @@
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.ComboBox comboEC;
     }
 }
 
