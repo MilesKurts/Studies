@@ -161,6 +161,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaCadastro", "SistemaC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calendary", "Calendary\Calendary.csproj", "{B1190CFC-B37A-4953-A4D1-F562D3A0938A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManipularString", "ManipularString\ManipularString.csproj", "{B05D13D2-EFC7-4E3B-95C6-66579905C18A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -483,6 +485,10 @@ Global
 		{B1190CFC-B37A-4953-A4D1-F562D3A0938A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1190CFC-B37A-4953-A4D1-F562D3A0938A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1190CFC-B37A-4953-A4D1-F562D3A0938A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B05D13D2-EFC7-4E3B-95C6-66579905C18A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B05D13D2-EFC7-4E3B-95C6-66579905C18A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B05D13D2-EFC7-4E3B-95C6-66579905C18A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B05D13D2-EFC7-4E3B-95C6-66579905C18A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
