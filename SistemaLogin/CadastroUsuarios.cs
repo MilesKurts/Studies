@@ -14,7 +14,7 @@ namespace SistemaLogin
             new Usuario(){Nome = "Arthur", Senha = "abcd" }
         };
         private static Usuario _userLogado = null;
-        public static Usuario UserLogado
+        public static Usuario UsuarioLogado
         {
             get { return _userLogado; }
             private set { _userLogado = value; }
