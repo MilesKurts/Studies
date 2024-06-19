@@ -18,7 +18,7 @@ namespace JoKenPo
         {
             Image.FromFile("Pedra.png"),
             Image.FromFile("Tesoura.png"),
-            Image.FromFile("Pedra.png")
+            Image.FromFile("Papel.png")
         };
 
         public  Image ImgPC { get; private set; }
@@ -31,7 +31,18 @@ namespace JoKenPo
 
             ImgJogador = images[jogador];
             ImgPC = images[pc];
-            return Resultado.Draw;
+
+            if (jogador == pc)
+            {
+                return Resultado.Draw;
+            }else if ((jogador == 0 &&  pc == 1)|| (jogador == 1 && pc == 2) || (jogador == 2 && pc == 0))
+            {
+                return Resultado.Success;
+            }
+            else
+            {
+                return Resultado.Lose;
+            }
         }
 
         private int JogadaPC()

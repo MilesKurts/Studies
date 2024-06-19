@@ -19,17 +19,40 @@ namespace JoKenPo
 
         private void btnPedra_Click(object sender, EventArgs e)
         {
-
+            StartGame(0);
         }
 
         private void btnPapel_Click(object sender, EventArgs e)
         {
-
+            StartGame(2);
         }
 
         private void btnTesoura_Click(object sender, EventArgs e)
         {
+            StartGame(1);
+        }
 
+        private void StartGame(int opcao)
+        {
+            labelResultado.Visible = false;
+            Game jogo = new Game();
+
+            switch (jogo.Jogar(opcao))
+            {
+                case Game.Resultado.Success:
+                    pictureResultado.BackgroundImage = Image.FromFile("Ganhar.png");
+                    goto default;
+                case Game.Resultado.Lose:
+                    pictureResultado.BackgroundImage = Image.FromFile("Perder.png");
+                    goto default;
+                case Game.Resultado.Draw:
+                    pictureResultado.BackgroundImage = Image.FromFile("Empatar.png");
+                    goto default;
+                default:
+                    pictureBox1.Image = jogo.ImgJogador;
+                    pictureBox2.Image = jogo.ImgPC;
+                    break;
+            }
         }
     }
 }
