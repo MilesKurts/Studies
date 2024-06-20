@@ -169,6 +169,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManipularNumeros", "Manipul
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoKenPo", "JoKenPo\JoKenPo.csproj", "{525323C5-5076-4067-A9FD-B75F8CFAA52C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassesImportantes", "ClassesImportantes\ClassesImportantes.csproj", "{921B942C-D247-49A5-BD93-CDB6174DF0EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -507,6 +509,10 @@ Global
 		{525323C5-5076-4067-A9FD-B75F8CFAA52C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{525323C5-5076-4067-A9FD-B75F8CFAA52C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{525323C5-5076-4067-A9FD-B75F8CFAA52C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{921B942C-D247-49A5-BD93-CDB6174DF0EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{921B942C-D247-49A5-BD93-CDB6174DF0EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{921B942C-D247-49A5-BD93-CDB6174DF0EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{921B942C-D247-49A5-BD93-CDB6174DF0EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
