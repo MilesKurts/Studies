@@ -48,5 +48,18 @@ namespace ClassesImportantes
             
 
         }
+
+        private void btnTimeSpoan_Click(object sender, EventArgs e)
+        {
+            
+            //lblResultado.Text = TimeSpan.FromMinutes(60).ToString();
+            //lblResultado.Text = TimeSpan.TicksPerMinute.ToString();
+
+            TimeSpan inicio = new TimeSpan(5,30,30);
+
+            TimeSpan fim = new TimeSpan(18,25,0);
+            TimeSpan intervalo = inicio - fim;
+            lblResultado.Text = intervalo.Hours.ToString();
+        }
     }
 }

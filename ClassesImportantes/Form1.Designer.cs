@@ -31,10 +31,12 @@
             this.btnMessageBox = new System.Windows.Forms.Button();
             this.lblResultado = new System.Windows.Forms.Label();
             this.btnAleatorio = new System.Windows.Forms.Button();
+            this.btnTimeSpoan = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnMessageBox
             // 
+            this.btnMessageBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMessageBox.Location = new System.Drawing.Point(17, 260);
             this.btnMessageBox.Name = "btnMessageBox";
             this.btnMessageBox.Size = new System.Drawing.Size(132, 99);
@@ -54,6 +56,7 @@
             // 
             // btnAleatorio
             // 
+            this.btnAleatorio.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAleatorio.Location = new System.Drawing.Point(155, 260);
             this.btnAleatorio.Name = "btnAleatorio";
             this.btnAleatorio.Size = new System.Drawing.Size(132, 99);
@@ -62,11 +65,23 @@
             this.btnAleatorio.UseVisualStyleBackColor = true;
             this.btnAleatorio.Click += new System.EventHandler(this.btnAleatorio_Click);
             // 
+            // btnTimeSpoan
+            // 
+            this.btnTimeSpoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTimeSpoan.Location = new System.Drawing.Point(293, 260);
+            this.btnTimeSpoan.Name = "btnTimeSpoan";
+            this.btnTimeSpoan.Size = new System.Drawing.Size(132, 99);
+            this.btnTimeSpoan.TabIndex = 3;
+            this.btnTimeSpoan.Text = "TimeSpoan";
+            this.btnTimeSpoan.UseVisualStyleBackColor = true;
+            this.btnTimeSpoan.Click += new System.EventHandler(this.btnTimeSpoan_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnTimeSpoan);
             this.Controls.Add(this.btnAleatorio);
             this.Controls.Add(this.lblResultado);
             this.Controls.Add(this.btnMessageBox);
@@ -81,6 +96,7 @@
         private System.Windows.Forms.Button btnMessageBox;
         private System.Windows.Forms.Label lblResultado;
         private System.Windows.Forms.Button btnAleatorio;
+        private System.Windows.Forms.Button btnTimeSpoan;
     }
 }
 
