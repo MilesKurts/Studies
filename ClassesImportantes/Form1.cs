@@ -79,5 +79,13 @@ namespace ClassesImportantes
             TimeSpan tempo = new TimeSpan(5, 10, 5, 20);
             lblResultado.Text = data.Add(tempo).ToString();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Color vermelho = Color.Red;
+            Color amarelo = Color.Yellow;
+            lblResultado.ForeColor = vermelho;
+            lblResultado.BackColor = amarelo;
+        }
     }
 }
