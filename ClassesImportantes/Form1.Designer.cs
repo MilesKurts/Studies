@@ -32,6 +32,7 @@
             this.lblResultado = new System.Windows.Forms.Label();
             this.btnAleatorio = new System.Windows.Forms.Button();
             this.btnTimeSpoan = new System.Windows.Forms.Button();
+            this.btnDateTime = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnMessageBox
@@ -76,11 +77,23 @@
             this.btnTimeSpoan.UseVisualStyleBackColor = true;
             this.btnTimeSpoan.Click += new System.EventHandler(this.btnTimeSpoan_Click);
             // 
+            // btnDateTime
+            // 
+            this.btnDateTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDateTime.Location = new System.Drawing.Point(431, 260);
+            this.btnDateTime.Name = "btnDateTime";
+            this.btnDateTime.Size = new System.Drawing.Size(132, 99);
+            this.btnDateTime.TabIndex = 4;
+            this.btnDateTime.Text = "Date Time";
+            this.btnDateTime.UseVisualStyleBackColor = true;
+            this.btnDateTime.Click += new System.EventHandler(this.btnDateTime_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnDateTime);
             this.Controls.Add(this.btnTimeSpoan);
             this.Controls.Add(this.btnAleatorio);
             this.Controls.Add(this.lblResultado);
@@ -97,6 +110,7 @@
         private System.Windows.Forms.Label lblResultado;
         private System.Windows.Forms.Button btnAleatorio;
         private System.Windows.Forms.Button btnTimeSpoan;
+        private System.Windows.Forms.Button btnDateTime;
     }
 }
 

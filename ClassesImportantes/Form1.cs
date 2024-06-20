@@ -61,5 +61,23 @@ namespace ClassesImportantes
             TimeSpan intervalo = inicio - fim;
             lblResultado.Text = intervalo.Hours.ToString();
         }
+
+        private void btnDateTime_Click(object sender, EventArgs e)
+        {
+            //lblResultado.Text = DateTime.Now.ToString();
+            //lblResultado.Text = DateTime.Today.ToString();
+            //lblResultado.Text = DateTime.DaysInMonth(2024,06).ToString();
+            //lblResultado.Text = DateTime.IsLeapYear(2024).ToString();
+            //lblResultado.Text = DateTime.Now.ToLongDateString();
+            //lblResultado.Text = DateTime.Now.ToShortDateString();
+            //lblResultado.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+
+
+            DateTime data = new DateTime(1985,01,10,14,15,30);
+            //lblResultado.Text =  data.AddYears(2).ToString();
+
+            TimeSpan tempo = new TimeSpan(5, 10, 5, 20);
+            lblResultado.Text = data.Add(tempo).ToString();
+        }
     }
 }
