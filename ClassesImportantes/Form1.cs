@@ -82,10 +82,16 @@ namespace ClassesImportantes
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Color vermelho = Color.Red;
-            Color amarelo = Color.Yellow;
-            lblResultado.ForeColor = vermelho;
-            lblResultado.BackColor = amarelo;
+
+        }
+
+        private void btnFontes_Click(object sender, EventArgs e)
+        {
+            Font letra = new Font("Arial", 24, FontStyle.Italic | FontStyle.Bold, GraphicsUnit.Pixel);
+
+            lblResultado.Text = "Bem vindo ao C#, trabalho com Fontes";
+
+            lblResultado.Font = letra;
         }
     }
 }

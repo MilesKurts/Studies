@@ -33,6 +33,7 @@
             this.btnAleatorio = new System.Windows.Forms.Button();
             this.btnTimeSpoan = new System.Windows.Forms.Button();
             this.btnDateTime = new System.Windows.Forms.Button();
+            this.btnFontes = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -89,14 +90,25 @@
             this.btnDateTime.UseVisualStyleBackColor = true;
             this.btnDateTime.Click += new System.EventHandler(this.btnDateTime_Click);
             // 
+            // btnFontes
+            // 
+            this.btnFontes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFontes.Location = new System.Drawing.Point(155, 365);
+            this.btnFontes.Name = "btnFontes";
+            this.btnFontes.Size = new System.Drawing.Size(132, 99);
+            this.btnFontes.TabIndex = 6;
+            this.btnFontes.Text = "Fontes";
+            this.btnFontes.UseVisualStyleBackColor = true;
+            this.btnFontes.Click += new System.EventHandler(this.btnFontes_Click);
+            // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(17, 365);
+            this.button1.Location = new System.Drawing.Point(12, 365);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(132, 99);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Message Box";
+            this.button1.TabIndex = 7;
+            this.button1.Text = "BtnColor";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -106,6 +118,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 469);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnFontes);
             this.Controls.Add(this.btnDateTime);
             this.Controls.Add(this.btnTimeSpoan);
             this.Controls.Add(this.btnAleatorio);
@@ -124,6 +137,8 @@
         private System.Windows.Forms.Button btnAleatorio;
         private System.Windows.Forms.Button btnTimeSpoan;
         private System.Windows.Forms.Button btnDateTime;
+        private System.Windows.Forms.Button btnColor;
+        private System.Windows.Forms.Button btnFontes;
         private System.Windows.Forms.Button button1;
     }
 }
