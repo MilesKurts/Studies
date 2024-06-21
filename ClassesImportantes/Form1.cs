@@ -93,5 +93,18 @@ namespace ClassesImportantes
 
             lblResultado.Font = letra;
         }
+
+        private void btnEnvioment_Click(object sender, EventArgs e)
+        {
+            string meusDocs = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+
+            string dirAtual = Environment.CurrentDirectory;
+            lblResultado.Text = dirAtual;
+        }
+
+        private void btnAplication_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
