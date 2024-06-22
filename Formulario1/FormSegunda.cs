@@ -30,7 +30,7 @@ namespace Formulario1
 
         private void FormSegunda_Load(object sender, EventArgs e)
         {
-
+            txtMensagem.Text = Mensagem;
         }
 
         private void btnPrincipal_Click(object sender, EventArgs e)
@@ -38,6 +38,25 @@ namespace Formulario1
             this.Close();
             Thread t = new Thread(() => Application.Run(new FormMain()));
             t.Start();
+        }
+
+        private void btnRetorno_Click(object sender, EventArgs e)
+        {
+            if (txtMensagem == null || txtMensagem.Text == null)
+            {
+                Mensagem = null;
+            }
+            else
+            {
+                Mensagem = txtMensagem.Text;
+            }
+            Close();
+        }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            Mensagem = null;
+            Close();
         }
     }
 }

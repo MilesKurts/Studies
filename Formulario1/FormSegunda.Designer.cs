@@ -30,7 +30,9 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.btnPrincipal = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtMensagem = new System.Windows.Forms.TextBox();
+            this.btnRetorno = new System.Windows.Forms.Button();
+            this.btnFechar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -46,7 +48,7 @@
             // btnPrincipal
             // 
             this.btnPrincipal.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrincipal.Location = new System.Drawing.Point(62, 282);
+            this.btnPrincipal.Location = new System.Drawing.Point(67, 276);
             this.btnPrincipal.Name = "btnPrincipal";
             this.btnPrincipal.Size = new System.Drawing.Size(133, 67);
             this.btnPrincipal.TabIndex = 1;
@@ -54,19 +56,44 @@
             this.btnPrincipal.UseVisualStyleBackColor = true;
             this.btnPrincipal.Click += new System.EventHandler(this.btnPrincipal_Click);
             // 
-            // textBox1
+            // txtMensagem
             // 
-            this.textBox1.Location = new System.Drawing.Point(170, 127);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(304, 20);
-            this.textBox1.TabIndex = 2;
+            this.txtMensagem.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMensagem.Location = new System.Drawing.Point(170, 127);
+            this.txtMensagem.Name = "txtMensagem";
+            this.txtMensagem.Size = new System.Drawing.Size(304, 38);
+            this.txtMensagem.TabIndex = 2;
+            // 
+            // btnRetorno
+            // 
+            this.btnRetorno.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRetorno.Location = new System.Drawing.Point(239, 276);
+            this.btnRetorno.Name = "btnRetorno";
+            this.btnRetorno.Size = new System.Drawing.Size(133, 67);
+            this.btnRetorno.TabIndex = 3;
+            this.btnRetorno.Text = "Retorno";
+            this.btnRetorno.UseVisualStyleBackColor = true;
+            this.btnRetorno.Click += new System.EventHandler(this.btnRetorno_Click);
+            // 
+            // btnFechar
+            // 
+            this.btnFechar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFechar.Location = new System.Drawing.Point(397, 276);
+            this.btnFechar.Name = "btnFechar";
+            this.btnFechar.Size = new System.Drawing.Size(133, 67);
+            this.btnFechar.TabIndex = 4;
+            this.btnFechar.Text = "Fechar";
+            this.btnFechar.UseVisualStyleBackColor = true;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
             // FormSegunda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btnFechar);
+            this.Controls.Add(this.btnRetorno);
+            this.Controls.Add(this.txtMensagem);
             this.Controls.Add(this.btnPrincipal);
             this.Controls.Add(this.label1);
             this.Name = "FormSegunda";
@@ -81,6 +108,8 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnPrincipal;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtMensagem;
+        private System.Windows.Forms.Button btnRetorno;
+        private System.Windows.Forms.Button btnFechar;
     }
 }
