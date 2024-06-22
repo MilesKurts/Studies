@@ -24,8 +24,10 @@ namespace Formulario1
 
         private void btnSegunda_Click(object sender, EventArgs e)
         {
+            Hide();
             FormSegunda f = new FormSegunda();
             f.ShowDialog();
+            this.Show();
         }
     }
 }

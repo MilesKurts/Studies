@@ -15,6 +15,7 @@ namespace Formulario1
         public FormSegunda()
         {
             InitializeComponent();
+            
         }
 
         private void FormSegunda_Load(object sender, EventArgs e)
