@@ -10,7 +10,7 @@ namespace TaskConsole
     {
         static void Main(string[] args)
         {
-            #region
+            #region part1
             //Task t1 = new Task(Tarefa);
             //t1.Start();
 
@@ -28,7 +28,7 @@ namespace TaskConsole
             //{
             //    Console.WriteLine("Principal.");
             //}
-            #endregion
+            #endregion part
             Task[] tasks = 
             {
                 Task.Factory.StartNew(() => 
