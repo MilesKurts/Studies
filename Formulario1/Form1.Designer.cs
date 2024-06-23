@@ -31,14 +31,25 @@
             this.lblTitulo = new System.Windows.Forms.Label();
             this.btnSegunda = new System.Windows.Forms.Button();
             this.btnSegundaFormThread = new System.Windows.Forms.Button();
+            this.menuBar = new System.Windows.Forms.MenuStrip();
+            this.menuFile = new System.Windows.Forms.ToolStripMenuItem();
+            this.mFileNovo = new System.Windows.Forms.ToolStripMenuItem();
+            this.mFileAbrir = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.mFileSair = new System.Windows.Forms.ToolStripMenuItem();
+            this.mHelpSobre = new System.Windows.Forms.ToolStripMenuItem();
+            this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mHelpSobreDesenvolvedor = new System.Windows.Forms.ToolStripMenuItem();
+            this.mHelpSobreVersao = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuBar.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTitulo
             // 
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitulo.Location = new System.Drawing.Point(35, 29);
+            this.lblTitulo.Location = new System.Drawing.Point(45, 119);
             this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(680, 209);
+            this.lblTitulo.Size = new System.Drawing.Size(680, 164);
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "Principal";
             this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -65,6 +76,82 @@
             this.btnSegundaFormThread.UseVisualStyleBackColor = true;
             this.btnSegundaFormThread.Click += new System.EventHandler(this.btnSegundaFormThread_Click);
             // 
+            // menuBar
+            // 
+            this.menuBar.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.menuBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuFile,
+            this.mHelpSobre});
+            this.menuBar.Location = new System.Drawing.Point(0, 0);
+            this.menuBar.Name = "menuBar";
+            this.menuBar.Size = new System.Drawing.Size(800, 24);
+            this.menuBar.TabIndex = 3;
+            this.menuBar.Text = "menuStrip1";
+            // 
+            // menuFile
+            // 
+            this.menuFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mFileNovo,
+            this.mFileAbrir,
+            this.toolStripSeparator1,
+            this.mFileSair});
+            this.menuFile.Name = "menuFile";
+            this.menuFile.Size = new System.Drawing.Size(37, 20);
+            this.menuFile.Text = "File";
+            // 
+            // mFileNovo
+            // 
+            this.mFileNovo.Name = "mFileNovo";
+            this.mFileNovo.Size = new System.Drawing.Size(180, 22);
+            this.mFileNovo.Text = "Novo";
+            // 
+            // mFileAbrir
+            // 
+            this.mFileAbrir.Name = "mFileAbrir";
+            this.mFileAbrir.Size = new System.Drawing.Size(180, 22);
+            this.mFileAbrir.Text = "Abrir";
+            this.mFileAbrir.Click += new System.EventHandler(this.abriToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            // 
+            // mFileSair
+            // 
+            this.mFileSair.Name = "mFileSair";
+            this.mFileSair.Size = new System.Drawing.Size(180, 22);
+            this.mFileSair.Text = "Sair";
+            // 
+            // mHelpSobre
+            // 
+            this.mHelpSobre.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sobreToolStripMenuItem});
+            this.mHelpSobre.Name = "mHelpSobre";
+            this.mHelpSobre.Size = new System.Drawing.Size(44, 20);
+            this.mHelpSobre.Text = "Help";
+            // 
+            // sobreToolStripMenuItem
+            // 
+            this.sobreToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mHelpSobreDesenvolvedor,
+            this.mHelpSobreVersao});
+            this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
+            this.sobreToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sobreToolStripMenuItem.Text = "Sobre";
+            // 
+            // mHelpSobreDesenvolvedor
+            // 
+            this.mHelpSobreDesenvolvedor.Name = "mHelpSobreDesenvolvedor";
+            this.mHelpSobreDesenvolvedor.Size = new System.Drawing.Size(180, 22);
+            this.mHelpSobreDesenvolvedor.Text = "Desenvolvedor";
+            // 
+            // mHelpSobreVersao
+            // 
+            this.mHelpSobreVersao.Name = "mHelpSobreVersao";
+            this.mHelpSobreVersao.Size = new System.Drawing.Size(180, 22);
+            this.mHelpSobreVersao.Text = "Versão";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -73,10 +160,15 @@
             this.Controls.Add(this.btnSegundaFormThread);
             this.Controls.Add(this.btnSegunda);
             this.Controls.Add(this.lblTitulo);
+            this.Controls.Add(this.menuBar);
+            this.MainMenuStrip = this.menuBar;
             this.Name = "FormMain";
             this.Text = "Formulario Principal";
             this.Load += new System.EventHandler(this.FormMain_Load);
+            this.menuBar.ResumeLayout(false);
+            this.menuBar.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -85,6 +177,16 @@
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.Button btnSegunda;
         private System.Windows.Forms.Button btnSegundaFormThread;
+        private System.Windows.Forms.MenuStrip menuBar;
+        private System.Windows.Forms.ToolStripMenuItem menuFile;
+        private System.Windows.Forms.ToolStripMenuItem mFileNovo;
+        private System.Windows.Forms.ToolStripMenuItem mFileAbrir;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem mFileSair;
+        private System.Windows.Forms.ToolStripMenuItem mHelpSobre;
+        private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem mHelpSobreDesenvolvedor;
+        private System.Windows.Forms.ToolStripMenuItem mHelpSobreVersao;
     }
 }
 

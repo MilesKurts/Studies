@@ -44,5 +44,10 @@ namespace Formulario1
             Thread t =  new Thread(() => Application.Run(new FormSegunda()));
             t.Start();
         }
+
+        private void abriToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
