@@ -41,6 +41,8 @@
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mHelpSobreDesenvolvedor = new System.Windows.Forms.ToolStripMenuItem();
             this.mHelpSobreVersao = new System.Windows.Forms.ToolStripMenuItem();
+            this.comboNew = new System.Windows.Forms.ToolStripComboBox();
+            this.tBox = new System.Windows.Forms.ToolStripTextBox();
             this.menuBar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -81,12 +83,15 @@
             this.menuBar.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.menuBar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuFile,
-            this.mHelpSobre});
+            this.mHelpSobre,
+            this.comboNew,
+            this.tBox});
             this.menuBar.Location = new System.Drawing.Point(0, 0);
             this.menuBar.Name = "menuBar";
-            this.menuBar.Size = new System.Drawing.Size(800, 24);
+            this.menuBar.Size = new System.Drawing.Size(800, 27);
             this.menuBar.TabIndex = 3;
             this.menuBar.Text = "menuStrip1";
+            this.menuBar.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuBar_ItemClicked);
             // 
             // menuFile
             // 
@@ -96,7 +101,7 @@
             this.toolStripSeparator1,
             this.mFileSair});
             this.menuFile.Name = "menuFile";
-            this.menuFile.Size = new System.Drawing.Size(37, 20);
+            this.menuFile.Size = new System.Drawing.Size(37, 23);
             this.menuFile.Text = "File";
             // 
             // mFileNovo
@@ -107,6 +112,7 @@
             // 
             // mFileAbrir
             // 
+            this.mFileAbrir.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.mFileAbrir.Name = "mFileAbrir";
             this.mFileAbrir.Size = new System.Drawing.Size(180, 22);
             this.mFileAbrir.Text = "Abrir";
@@ -128,7 +134,7 @@
             this.mHelpSobre.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sobreToolStripMenuItem});
             this.mHelpSobre.Name = "mHelpSobre";
-            this.mHelpSobre.Size = new System.Drawing.Size(44, 20);
+            this.mHelpSobre.Size = new System.Drawing.Size(44, 23);
             this.mHelpSobre.Text = "Help";
             // 
             // sobreToolStripMenuItem
@@ -151,6 +157,17 @@
             this.mHelpSobreVersao.Name = "mHelpSobreVersao";
             this.mHelpSobreVersao.Size = new System.Drawing.Size(180, 22);
             this.mHelpSobreVersao.Text = "Versão";
+            // 
+            // comboNew
+            // 
+            this.comboNew.Name = "comboNew";
+            this.comboNew.Size = new System.Drawing.Size(121, 23);
+            // 
+            // tBox
+            // 
+            this.tBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.tBox.Name = "tBox";
+            this.tBox.Size = new System.Drawing.Size(100, 23);
             // 
             // FormMain
             // 
@@ -187,6 +204,8 @@
         private System.Windows.Forms.ToolStripMenuItem sobreToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem mHelpSobreDesenvolvedor;
         private System.Windows.Forms.ToolStripMenuItem mHelpSobreVersao;
+        private System.Windows.Forms.ToolStripComboBox comboNew;
+        private System.Windows.Forms.ToolStripTextBox tBox;
     }
 }
 

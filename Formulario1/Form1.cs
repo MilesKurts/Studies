@@ -47,6 +47,20 @@ namespace Formulario1
 
         private void abriToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Hide();
+            FormSegunda f = new FormSegunda();
+            f.ShowDialog();
+            Show();
+
+        }
+
+        private void mFileNovo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void menuBar_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
 
         }
     }
