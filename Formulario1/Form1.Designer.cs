@@ -107,6 +107,8 @@
             // mFileNovo
             // 
             this.mFileNovo.Name = "mFileNovo";
+            this.mFileNovo.ShortcutKeyDisplayString = "Control + N";
+            this.mFileNovo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
             this.mFileNovo.Size = new System.Drawing.Size(180, 22);
             this.mFileNovo.Text = "Novo";
             // 
@@ -114,6 +116,7 @@
             // 
             this.mFileAbrir.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.mFileAbrir.Name = "mFileAbrir";
+            this.mFileAbrir.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
             this.mFileAbrir.Size = new System.Drawing.Size(180, 22);
             this.mFileAbrir.Text = "Abrir";
             this.mFileAbrir.Click += new System.EventHandler(this.abriToolStripMenuItem_Click);
