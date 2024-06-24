@@ -78,5 +78,33 @@ namespace Formulario1
         {
             MessageBox.Show("Versão 1.0");
         }
+
+        private void comboNew_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboNew.SelectedIndex == 0)
+            {
+                menuFile.Text = "File";
+                mHelpSobre.Text = "Help";
+            }
+            else
+            {
+                menuFile.Text = "Arquivo";
+                mHelpSobre.Text = "Ajuda";
+            }
+        }
+
+        private void comboNew_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void mPesquisar_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Return) 
+            {
+                lblTitulo.Text = mPesquisar.Text;
+                mPesquisar.Text = "";
+            }
+        }
     }
 }

@@ -42,7 +42,7 @@
             this.mHelpSobreDesenvolvedor = new System.Windows.Forms.ToolStripMenuItem();
             this.mHelpSobreVersao = new System.Windows.Forms.ToolStripMenuItem();
             this.comboNew = new System.Windows.Forms.ToolStripComboBox();
-            this.tBox = new System.Windows.Forms.ToolStripTextBox();
+            this.mPesquisar = new System.Windows.Forms.ToolStripTextBox();
             this.menuBar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,7 +85,7 @@
             this.menuFile,
             this.mHelpSobre,
             this.comboNew,
-            this.tBox});
+            this.mPesquisar});
             this.menuBar.Location = new System.Drawing.Point(0, 0);
             this.menuBar.Name = "menuBar";
             this.menuBar.Size = new System.Drawing.Size(800, 27);
@@ -150,27 +150,33 @@
             // mHelpSobreDesenvolvedor
             // 
             this.mHelpSobreDesenvolvedor.Name = "mHelpSobreDesenvolvedor";
-            this.mHelpSobreDesenvolvedor.Size = new System.Drawing.Size(180, 22);
+            this.mHelpSobreDesenvolvedor.Size = new System.Drawing.Size(152, 22);
             this.mHelpSobreDesenvolvedor.Text = "Desenvolvedor";
             this.mHelpSobreDesenvolvedor.Click += new System.EventHandler(this.mHelpSobreDesenvolvedor_Click);
             // 
             // mHelpSobreVersao
             // 
             this.mHelpSobreVersao.Name = "mHelpSobreVersao";
-            this.mHelpSobreVersao.Size = new System.Drawing.Size(180, 22);
+            this.mHelpSobreVersao.Size = new System.Drawing.Size(152, 22);
             this.mHelpSobreVersao.Text = "Versão";
             this.mHelpSobreVersao.Click += new System.EventHandler(this.mHelpSobreVersao_Click);
             // 
             // comboNew
             // 
+            this.comboNew.Items.AddRange(new object[] {
+            "Ingles",
+            "Portugues"});
             this.comboNew.Name = "comboNew";
             this.comboNew.Size = new System.Drawing.Size(121, 23);
+            this.comboNew.SelectedIndexChanged += new System.EventHandler(this.comboNew_SelectedIndexChanged);
+            this.comboNew.Click += new System.EventHandler(this.comboNew_Click);
             // 
-            // tBox
+            // mPesquisar
             // 
-            this.tBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.tBox.Name = "tBox";
-            this.tBox.Size = new System.Drawing.Size(100, 23);
+            this.mPesquisar.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.mPesquisar.Name = "mPesquisar";
+            this.mPesquisar.Size = new System.Drawing.Size(100, 23);
+            this.mPesquisar.KeyUp += new System.Windows.Forms.KeyEventHandler(this.mPesquisar_KeyUp);
             // 
             // FormMain
             // 
@@ -208,7 +214,7 @@
         private System.Windows.Forms.ToolStripMenuItem mHelpSobreDesenvolvedor;
         private System.Windows.Forms.ToolStripMenuItem mHelpSobreVersao;
         private System.Windows.Forms.ToolStripComboBox comboNew;
-        private System.Windows.Forms.ToolStripTextBox tBox;
+        private System.Windows.Forms.ToolStripTextBox mPesquisar;
     }
 }
 
