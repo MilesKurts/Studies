@@ -63,5 +63,20 @@ namespace Formulario1
         {
 
         }
+
+        private void mFileSair_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void mHelpSobreDesenvolvedor_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Miles");
+        }
+
+        private void mHelpSobreVersao_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Versão 1.0");
+        }
     }
 }

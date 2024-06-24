@@ -128,6 +128,7 @@
             this.mFileSair.Name = "mFileSair";
             this.mFileSair.Size = new System.Drawing.Size(180, 22);
             this.mFileSair.Text = "Sair";
+            this.mFileSair.Click += new System.EventHandler(this.mFileSair_Click);
             // 
             // mHelpSobre
             // 
@@ -151,12 +152,14 @@
             this.mHelpSobreDesenvolvedor.Name = "mHelpSobreDesenvolvedor";
             this.mHelpSobreDesenvolvedor.Size = new System.Drawing.Size(180, 22);
             this.mHelpSobreDesenvolvedor.Text = "Desenvolvedor";
+            this.mHelpSobreDesenvolvedor.Click += new System.EventHandler(this.mHelpSobreDesenvolvedor_Click);
             // 
             // mHelpSobreVersao
             // 
             this.mHelpSobreVersao.Name = "mHelpSobreVersao";
             this.mHelpSobreVersao.Size = new System.Drawing.Size(180, 22);
             this.mHelpSobreVersao.Text = "Versão";
+            this.mHelpSobreVersao.Click += new System.EventHandler(this.mHelpSobreVersao_Click);
             // 
             // comboNew
             // 
