@@ -181,6 +181,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Studies", "Studies\Studies.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeView", "TreeView\TreeView.csproj", "{04F1187F-FFFF-4391-9A72-AA12F76D7B70}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormContainer", "FormContainer\FormContainer.csproj", "{9F171B16-56EC-4676-A1E0-8A74E13017AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -543,6 +545,10 @@ Global
 		{04F1187F-FFFF-4391-9A72-AA12F76D7B70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04F1187F-FFFF-4391-9A72-AA12F76D7B70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04F1187F-FFFF-4391-9A72-AA12F76D7B70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F171B16-56EC-4676-A1E0-8A74E13017AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F171B16-56EC-4676-A1E0-8A74E13017AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F171B16-56EC-4676-A1E0-8A74E13017AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F171B16-56EC-4676-A1E0-8A74E13017AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
