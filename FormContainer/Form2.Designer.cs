@@ -49,6 +49,7 @@
             this.Controls.Add(this.btn3);
             this.Name = "Form2";
             this.Text = "Form2";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
 
         }
