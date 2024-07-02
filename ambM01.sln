@@ -183,6 +183,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeView", "TreeView\TreeVi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormContainer", "FormContainer\FormContainer.csproj", "{9F171B16-56EC-4676-A1E0-8A74E13017AF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolStrip", "ToolStrip\ToolStrip.csproj", "{B4322501-F14C-47A8-99F0-5FEBA94EFEDE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -549,6 +551,10 @@ Global
 		{9F171B16-56EC-4676-A1E0-8A74E13017AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F171B16-56EC-4676-A1E0-8A74E13017AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F171B16-56EC-4676-A1E0-8A74E13017AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4322501-F14C-47A8-99F0-5FEBA94EFEDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4322501-F14C-47A8-99F0-5FEBA94EFEDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4322501-F14C-47A8-99F0-5FEBA94EFEDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4322501-F14C-47A8-99F0-5FEBA94EFEDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
