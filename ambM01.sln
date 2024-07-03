@@ -187,6 +187,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolStrip", "ToolStrip\Tool
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PageSetupDialog", "PageSetupDialog\PageSetupDialog.csproj", "{6658A478-5A1B-4DC4-A91F-A3F0B9892D3F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrintDocument", "PrintDocument\PrintDocument.csproj", "{33933315-1C0B-451D-9B50-B5FE71FB8402}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -561,6 +563,10 @@ Global
 		{6658A478-5A1B-4DC4-A91F-A3F0B9892D3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6658A478-5A1B-4DC4-A91F-A3F0B9892D3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6658A478-5A1B-4DC4-A91F-A3F0B9892D3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33933315-1C0B-451D-9B50-B5FE71FB8402}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33933315-1C0B-451D-9B50-B5FE71FB8402}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33933315-1C0B-451D-9B50-B5FE71FB8402}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33933315-1C0B-451D-9B50-B5FE71FB8402}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
