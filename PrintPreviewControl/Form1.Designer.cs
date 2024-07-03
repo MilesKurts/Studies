@@ -28,18 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.printPreviewControl1 = new System.Windows.Forms.PrintPreviewControl();
+            this.printPreview = new System.Windows.Forms.PrintPreviewControl();
             this.txtPrint = new System.Windows.Forms.RichTextBox();
             this.btnVisualizar = new System.Windows.Forms.Button();
             this.btnImprimir = new System.Windows.Forms.Button();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.SuspendLayout();
             // 
-            // printPreviewControl1
+            // printPreview
             // 
-            this.printPreviewControl1.Location = new System.Drawing.Point(397, 62);
-            this.printPreviewControl1.Name = "printPreviewControl1";
-            this.printPreviewControl1.Size = new System.Drawing.Size(377, 299);
-            this.printPreviewControl1.TabIndex = 0;
+            this.printPreview.Document = this.printDocument1;
+            this.printPreview.Location = new System.Drawing.Point(397, 62);
+            this.printPreview.Name = "printPreview";
+            this.printPreview.Size = new System.Drawing.Size(377, 299);
+            this.printPreview.TabIndex = 0;
+            this.printPreview.Zoom = 0.24893071000855432D;
             // 
             // txtPrint
             // 
@@ -57,6 +60,7 @@
             this.btnVisualizar.TabIndex = 2;
             this.btnVisualizar.Text = "Visualizar";
             this.btnVisualizar.UseVisualStyleBackColor = true;
+            this.btnVisualizar.Click += new System.EventHandler(this.btnVisualizar_Click);
             // 
             // btnImprimir
             // 
@@ -66,6 +70,11 @@
             this.btnImprimir.TabIndex = 3;
             this.btnImprimir.Text = "Imprimir";
             this.btnImprimir.UseVisualStyleBackColor = true;
+            this.btnImprimir.Click += new System.EventHandler(this.btnImprimir_Click);
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
             // Form1
             // 
@@ -75,7 +84,7 @@
             this.Controls.Add(this.btnImprimir);
             this.Controls.Add(this.btnVisualizar);
             this.Controls.Add(this.txtPrint);
-            this.Controls.Add(this.printPreviewControl1);
+            this.Controls.Add(this.printPreview);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -84,10 +93,11 @@
 
         #endregion
 
-        private System.Windows.Forms.PrintPreviewControl printPreviewControl1;
+        private System.Windows.Forms.PrintPreviewControl printPreview;
         private System.Windows.Forms.RichTextBox txtPrint;
         private System.Windows.Forms.Button btnVisualizar;
         private System.Windows.Forms.Button btnImprimir;
+        private System.Drawing.Printing.PrintDocument printDocument1;
     }
 }
 
