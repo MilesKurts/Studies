@@ -193,6 +193,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrintPreviewControl", "Prin
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrintPreviewDialog", "PrintPreviewDialog\PrintPreviewDialog.csproj", "{F463975B-6F0E-419F-B320-51B27F64F3BF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenFileDialog", "OpenFileDialog\OpenFileDialog.csproj", "{830A652B-28C9-474C-AAD2-87BAF8F4D792}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -579,6 +581,10 @@ Global
 		{F463975B-6F0E-419F-B320-51B27F64F3BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F463975B-6F0E-419F-B320-51B27F64F3BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F463975B-6F0E-419F-B320-51B27F64F3BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{830A652B-28C9-474C-AAD2-87BAF8F4D792}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{830A652B-28C9-474C-AAD2-87BAF8F4D792}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{830A652B-28C9-474C-AAD2-87BAF8F4D792}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{830A652B-28C9-474C-AAD2-87BAF8F4D792}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
