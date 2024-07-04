@@ -199,6 +199,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaveFileDialog", "SaveFileD
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlesErros", "ControlesErros\ControlesErros.csproj", "{92F368E6-78B3-4944-8249-E1C6E66BBCD5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arquivo", "Arquivo\Arquivo.csproj", "{AE4006C8-3D8E-499F-AF2F-0F24FE91BDA2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -597,6 +599,10 @@ Global
 		{92F368E6-78B3-4944-8249-E1C6E66BBCD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{92F368E6-78B3-4944-8249-E1C6E66BBCD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{92F368E6-78B3-4944-8249-E1C6E66BBCD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE4006C8-3D8E-499F-AF2F-0F24FE91BDA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE4006C8-3D8E-499F-AF2F-0F24FE91BDA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE4006C8-3D8E-499F-AF2F-0F24FE91BDA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE4006C8-3D8E-499F-AF2F-0F24FE91BDA2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
