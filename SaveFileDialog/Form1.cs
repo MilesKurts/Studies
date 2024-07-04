@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace OpenFileDialog
+namespace SaveFileDialog
 {
     public partial class Form1 : Form
     {
@@ -19,13 +19,12 @@ namespace OpenFileDialog
 
         private void button1_Click(object sender, EventArgs e)
         {
-            open.Filter = "Imagem png | *.png |Icone|*.ico";
-            if(open.ShowDialog() != DialogResult.Cancel)
+            save.Filter = "text| *.txt| Document|*.doc|Portavel|*.pdf";
+
+            if (save.ShowDialog() != DialogResult.Cancel)
             {
-                //label1.Text = open.FileName;
-                foreach (string item in open.FileNames) {
-                    listBox1.Items.Add(item);
-                }
+                label1.Text = save.Filter;
+
             }
         }
     }
