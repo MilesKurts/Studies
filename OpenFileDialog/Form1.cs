@@ -19,7 +19,7 @@ namespace OpenFileDialog
 
         private void button1_Click(object sender, EventArgs e)
         {
-            open.Filter = "Imagem png | *.png";
+            open.Filter = "Imagem png | *.png |Icone|*.ico";
             if(open.ShowDialog() != DialogResult.Cancel)
             {
                 label1.Text = open.FileName;
