@@ -203,6 +203,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Arquivo", "Arquivo\Arquivo.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "newFile", "newFile\newFile.csproj", "{D66FCDDC-614B-4858-9C7D-DD667C6843AD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "directoryInfo", "directoryInfo\directoryInfo.csproj", "{C17A25E7-4B57-4D7B-844D-3D40042B7114}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -609,6 +611,10 @@ Global
 		{D66FCDDC-614B-4858-9C7D-DD667C6843AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D66FCDDC-614B-4858-9C7D-DD667C6843AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D66FCDDC-614B-4858-9C7D-DD667C6843AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C17A25E7-4B57-4D7B-844D-3D40042B7114}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C17A25E7-4B57-4D7B-844D-3D40042B7114}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C17A25E7-4B57-4D7B-844D-3D40042B7114}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C17A25E7-4B57-4D7B-844D-3D40042B7114}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
