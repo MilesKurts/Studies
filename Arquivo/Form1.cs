@@ -22,6 +22,7 @@ namespace Arquivo
         {
             string pasta = @"d:\curso\";
             string arquivo = "teste.txt";
+            FileInfo file = new FileInfo(pasta);
 
             //bool res = File.Exists(pasta + arquivo);
 

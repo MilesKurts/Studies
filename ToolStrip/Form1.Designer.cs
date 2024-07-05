@@ -96,13 +96,13 @@
             this.newToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.new1ToolStripMenuItem});
             this.newToolStripMenuItem.Name = "newToolStripMenuItem";
-            this.newToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.newToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
             this.newToolStripMenuItem.Text = "new";
             // 
             // new1ToolStripMenuItem
             // 
             this.new1ToolStripMenuItem.Name = "new1ToolStripMenuItem";
-            this.new1ToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.new1ToolStripMenuItem.Size = new System.Drawing.Size(102, 22);
             this.new1ToolStripMenuItem.Text = "new1";
             // 
             // toolStripDropDownButton1
@@ -119,7 +119,7 @@
             // 
             // toolStripContainer1.ContentPanel
             // 
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(332, 214);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(358, 239);
             this.toolStripContainer1.Location = new System.Drawing.Point(81, 114);
             this.toolStripContainer1.Name = "toolStripContainer1";
             // 
@@ -142,7 +142,7 @@
             this.toolStripComboBox1});
             this.toolStrip2.Location = new System.Drawing.Point(0, 3);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(124, 127);
+            this.toolStrip2.Size = new System.Drawing.Size(123, 127);
             this.toolStrip2.TabIndex = 0;
             // 
             // toolStripSplitButton2
@@ -151,7 +151,7 @@
             this.toolStripSplitButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripSplitButton2.Image")));
             this.toolStripSplitButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripSplitButton2.Name = "toolStripSplitButton2";
-            this.toolStripSplitButton2.Size = new System.Drawing.Size(122, 20);
+            this.toolStripSplitButton2.Size = new System.Drawing.Size(121, 20);
             this.toolStripSplitButton2.Text = "toolStripSplitButton2";
             // 
             // toolStripDropDownButton2
@@ -160,13 +160,13 @@
             this.toolStripDropDownButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton2.Image")));
             this.toolStripDropDownButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripDropDownButton2.Name = "toolStripDropDownButton2";
-            this.toolStripDropDownButton2.Size = new System.Drawing.Size(122, 20);
+            this.toolStripDropDownButton2.Size = new System.Drawing.Size(121, 20);
             this.toolStripDropDownButton2.Text = "toolStripDropDownButton2";
             // 
             // toolStripLabel2
             // 
             this.toolStripLabel2.Name = "toolStripLabel2";
-            this.toolStripLabel2.Size = new System.Drawing.Size(122, 15);
+            this.toolStripLabel2.Size = new System.Drawing.Size(121, 15);
             this.toolStripLabel2.Text = "toolStripLabel2";
             // 
             // toolStripButton2
@@ -175,18 +175,18 @@
             this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(122, 20);
+            this.toolStripButton2.Size = new System.Drawing.Size(121, 20);
             this.toolStripButton2.Text = "toolStripButton2";
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(122, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(121, 6);
             // 
             // toolStripComboBox1
             // 
             this.toolStripComboBox1.Name = "toolStripComboBox1";
-            this.toolStripComboBox1.Size = new System.Drawing.Size(120, 23);
+            this.toolStripComboBox1.Size = new System.Drawing.Size(119, 23);
             // 
             // worker
             // 
