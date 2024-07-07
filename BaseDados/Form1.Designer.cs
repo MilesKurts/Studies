@@ -128,6 +128,7 @@
             this.btnConectar.TabIndex = 6;
             this.btnConectar.Text = "Conectar";
             this.btnConectar.UseVisualStyleBackColor = true;
+            this.btnConectar.Click += new System.EventHandler(this.btnConectar_Click);
             // 
             // btnCriarTabela
             // 
@@ -138,6 +139,7 @@
             this.btnCriarTabela.TabIndex = 7;
             this.btnCriarTabela.Text = "Criar Tabela";
             this.btnCriarTabela.UseVisualStyleBackColor = true;
+            this.btnCriarTabela.Click += new System.EventHandler(this.btnCriarTabela_Click);
             // 
             // btnInserir
             // 
