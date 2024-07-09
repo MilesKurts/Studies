@@ -147,5 +147,38 @@ namespace BaseDados
 
 
         }
+
+        private void btnExluir_Click(object sender, EventArgs e)
+        {
+            labelResultado.Text = "";
+            lista.Rows.Clear();
+
+            string strConnection = "server=127.0.0.1;User Id=root;database=cadastro;password=";
+            MySqlConnection conexao = new MySqlConnection(strConnection);
+            try
+            {
+                conexao.Open();
+
+                MySqlCommand comando = new MySqlCommand();
+                comando.Connection = conexao;
+
+                
+                
+                int id = (int)lista.SelectedRows[0].Cells[0].Value;
+
+                comando.CommandText = $"DELETE FROM pessoas WHERE id {id}";
+                comando.ExecuteNonQuery();
+
+                labelResultado.Text = "Registro excluido do Banco de dados";
+                
+                comando.Dispose();
+                
+            }
+            catch (Exception ex)
+            {
+                labelResultado.Text = ex.Message;
+            }
+            finally { conexao.Close(); }
+        }
     }
 }
