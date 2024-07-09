@@ -183,12 +183,13 @@
             this.btnEditar.TabIndex = 11;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(930, 491);
+            this.ClientSize = new System.Drawing.Size(955, 559);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnExluir);
             this.Controls.Add(this.btnProcurar);

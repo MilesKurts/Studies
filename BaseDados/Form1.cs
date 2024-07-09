@@ -177,5 +177,42 @@ namespace BaseDados
             }
             finally { conexao.Close(); }
         }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            string strConnection = "server=127.0.0.1;User Id=root;database=cadastro;password=";
+            MySqlConnection conexao = new MySqlConnection(strConnection);
+            try
+            {
+                conexao.Open();
+
+                MySqlCommand comando = new MySqlCommand();
+                comando.Connection = conexao;
+
+
+                int id = (int)lista.SelectedRows[0].Cells[0].Value;
+                string nome = txtNome.Text;
+                string email = txtEmail.Text;
+
+                string query = $"UPDATE pessoas SET nome = '{nome}',email ='{email}' WHERE id = {id}";
+
+                comando.CommandText = query;
+                comando.ExecuteNonQuery();
+
+                labelResultado.Text = $"Editado! \n {id}";
+
+                comando.Dispose();
+
+            }
+            catch (Exception ex)
+            {
+                labelResultado.Text = ex.Message;
+            }
+            finally { conexao.Close();
+            txtNome.Text = "";
+            txtEmail.Text = "";
+            }
+        }
     }
-}
+    }
+
