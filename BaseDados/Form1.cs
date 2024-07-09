@@ -150,8 +150,6 @@ namespace BaseDados
 
         private void btnExluir_Click(object sender, EventArgs e)
         {
-            labelResultado.Text = "";
-            lista.Rows.Clear();
 
             string strConnection = "server=127.0.0.1;User Id=root;database=cadastro;password=";
             MySqlConnection conexao = new MySqlConnection(strConnection);
@@ -163,18 +161,17 @@ namespace BaseDados
                 comando.Connection = conexao;
 
                 
-                
                 int id = (int)lista.SelectedRows[0].Cells[0].Value;
 
-                comando.CommandText = $"DELETE FROM pessoas WHERE id {id}";
+                comando.CommandText = $"DELETE FROM pessoas WHERE id = {id};";
                 comando.ExecuteNonQuery();
 
-                labelResultado.Text = "Registro excluido do Banco de dados";
+                labelResultado.Text = $"Registro excluido do Banco de dados \n {id}";
                 
                 comando.Dispose();
                 
             }
-            catch (Exception ex)
+            catch (Exception ex )
             {
                 labelResultado.Text = ex.Message;
             }
