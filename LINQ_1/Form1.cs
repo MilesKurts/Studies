@@ -14,100 +14,169 @@ namespace LINQ_1
     {
         List<string> lista_nomes;
         List<int> lista_numeros;
-        Dictionary<string, double> lista_produto;
+        Dictionary<string, double> lista_produtos;
         Dictionary<string, string> lista_estados;
+
         public Form1()
         {
             InitializeComponent();
 
+            #region Lista de Nomes
             lista_nomes = new List<string>();
-            lista_nomes.Add("Ariovaldo");
-            lista_nomes.Add("Bruno");
-            lista_nomes.Add("Carlos");
-            lista_nomes.Add("David");
-            lista_nomes.Add("Emanuel");
-            lista_nomes.Add("Flavio");
             lista_nomes.Add("Gabriel");
-            lista_nomes.Add("Hiago");
-            lista_nomes.Add("Igor");
-            lista_nomes.Add("Jose");
-            lista_nomes.Add("Kaique");
-            lista_nomes.Add("Lazarro");
-            lista_nomes.Add("Miles");
-            lista_nomes.Add("Noé");
-            lista_nomes.Add("Osvaldo");
-            lista_nomes.Add("Pedro");
-            lista_nomes.Add("Quadrado");
-            lista_nomes.Add("Ronaldo");
-            lista_nomes.Add("Saulo");
-            lista_nomes.Add("Tutancamom");
-            lista_nomes.Add("Urias");
-            lista_nomes.Add("Vlademir");
-            lista_nomes.Add("Washington");
-            lista_nomes.Add("Xablau");
-            lista_nomes.Add("Ygor");
-            lista_nomes.Add("Zambrolio");
+            lista_nomes.Add("Danny");
+            lista_nomes.Add("Arthur");
+            lista_nomes.Add("Danielle");
+            lista_nomes.Add("Thuxs");
+            lista_nomes.Add("Logan");
+            lista_nomes.Add("Artigas");
+            lista_nomes.Add("Flávio");
+            lista_nomes.Add("Beatriz");
+            lista_nomes.Add("Glória");
+            lista_nomes.Add("Maria");
+            lista_nomes.Add("Bia");
+            lista_nomes.Add("Eduardo");
+            lista_nomes.Add("Márcio");
+            lista_nomes.Add("Miguel");
+            lista_nomes.Add("Sarah");
+            lista_nomes.Add("Saray");
+            lista_nomes.Add("Larissa");
+            lista_nomes.Add("Lucas");
+            lista_nomes.Add("Guilherme");
+            lista_nomes.Add("Maciel");
+            #endregion
 
+            #region Lista Números
             lista_numeros = new List<int>();
-            lista_numeros.Add(0);
             lista_numeros.Add(10);
-            lista_numeros.Add(25);
-            lista_numeros.Add(30);
-            lista_numeros.Add(47);
-            lista_numeros.Add(50);
-            lista_numeros.Add(63);
-            lista_numeros.Add(70);
-            lista_numeros.Add(89);
-            lista_numeros.Add(90);
-            lista_numeros.Add(104);
-            lista_numeros.Add(113);
-            lista_numeros.Add(120);
-            lista_numeros.Add(131);
-            lista_numeros.Add(140);
-            lista_numeros.Add(255);
+            lista_numeros.Add(5);
+            lista_numeros.Add(8);
+            lista_numeros.Add(54);
+            lista_numeros.Add(57);
+            lista_numeros.Add(2);
+            lista_numeros.Add(3);
+            lista_numeros.Add(15);
+            lista_numeros.Add(12);
+            lista_numeros.Add(7);
+            #endregion
 
-            lista_produto = new Dictionary<string, double>();
-            lista_produto.Add("Teclado USB", 49.50);
-            lista_produto.Add("pC 2000", 1209.40);
-            lista_produto.Add("HD SSD 1TB", 59.50);
-            lista_produto.Add("Camisa Gamer", 69.50);
-            lista_produto.Add("Mouse", 79.50);
-            lista_produto.Add("Monitor", 145.70);
-            lista_produto.Add("Memoria RAM", 149.50);
-            lista_produto.Add("HD rigido", 100.20);
-            lista_produto.Add("Placa Mãe", 10.62);
-            lista_produto.Add("Gabinete", 142.22);
-            lista_produto.Add("Mouse Pad", 100.50);
+            #region Lista Produtos
+            lista_produtos = new Dictionary<string, double>();
+            lista_produtos.Add("Teclado USB", 49.95);
+            lista_produtos.Add("Teclado PS2", 45.95);
+            lista_produtos.Add("Teclado Gamer", 358.99);
+            lista_produtos.Add("Mouse", 29.5);
+            lista_produtos.Add("Monitor", 780.85);
+            lista_produtos.Add("Memória 16Gb", 700.00);
+            lista_produtos.Add("Memória 8Gb", 375.65);
+            lista_produtos.Add("Processador", 1250);
+            lista_produtos.Add("Placa Mãe", 623.75);
+            lista_produtos.Add("Gabinete mATX", 150);
+            lista_produtos.Add("Gabinete ATX", 190);
+            #endregion
 
+            #region Lista Estados
             lista_estados = new Dictionary<string, string>();
-            lista_estados.Add("São Paulo", "São Paulo");
-            lista_estados.Add("Rio De Janeiro", "Rio de Janeiro");
-            lista_estados.Add("Acre", "Rio Branco");
-            lista_estados.Add("Alagoas", "Maceio");
-            lista_estados.Add("Amapá", "Macapá");
-            lista_estados.Add("Roraima", "Boa vista");
-            lista_estados.Add("Santa Catarina", "Florianopoles");
-            lista_estados.Add("Sergipe", "Aracaju");
+            lista_estados.Add("Rio de Janeiro", "Brasil");
+            lista_estados.Add("New York", "Estados Unidos");
+            lista_estados.Add("São Paulo", "Brasil");
+            lista_estados.Add("Porto", "Portugal");
+            lista_estados.Add("Lisboa", "Portugal");
+            lista_estados.Add("Bahia", "Brasil");
+            lista_estados.Add("Washington", "Estados Unidos");
+            lista_estados.Add("Algarve", "Portugal");
+            #endregion
 
+        }
 
+        private void btnExecutar_Click(object sender, EventArgs e)
+        {
+            lista.Items.Clear();
+
+            // Metodo Comum
+            //foreach (int num in lista_numeros)
+            //{
+            //    if (num % 2 == 0)
+            //    {
+            //        lista.Items.Add(num);
+            //    }
+            //}
+
+            ////Utilizando LINQ
+            // Obter a fonte dos dados.
+            // Criar a consulta.
+            // Executar a consulta.
+
+            //IEnumerable<int> res = from num in lista_numeros where num % 2 == 0 select num;
+
+            //foreach (int n in res)
+            //{
+            //    lista.Items.Add(n);
+            //}
+
+            string txt = txtConsulta.Text;
+            IEnumerable<string> res2 = from nome in lista_nomes
+                                       where nome.StartsWith(txt)
+                                       select nome;
+
+            lista.Items.AddRange(res2.ToArray());
+
+            //foreach (string n in res2)
+            //{
+            //    lista.Items.Add(n);
+            //}
         }
 
         private void btExecutar_Click(object sender, EventArgs e)
         {
-
-            ////obter a fonte dos dados
             lista.Items.Clear();
-            ////criar a consulta
-            //IEnumerable<int> res = from num in lista_numeros where num % 2 == 0 select num;
-            
-            ////Executar a consulta
-            //foreach (int num in res)
+
+            // Metodo Comum
+            //foreach (int num in lista_numeros)
             //{
-            //    lista.Items.Add(num);
+            //    if (num % 2 == 0)
+            //    {
+            //        lista.Items.Add(num);
+            //    }
             //}
+
+            ////Utilizando LINQ
+            // Obter a fonte dos dados.
+            // Criar a consulta.
+            // Executar a consulta.
+
+            //IEnumerable<int> res = from num in lista_numeros where num % 2 == 0 select num;
+
+            //foreach (int n in res)
+            //{
+            //    lista.Items.Add(n);
+            //}
+
             string txt = txtConsulta.Text;
-            IEnumerable<string> res2 = from nome in lista_nomes where nome.StartsWith(txt) select nome; 
+            IEnumerable<string> res2 = from nome in lista_nomes
+                                       where nome.StartsWith(txt)
+                                       select nome;
+
             lista.Items.AddRange(res2.ToArray());
+
+            //foreach (string n in res2)
+            //{
+            //    lista.Items.Add(n);
+            //}
+
         }
-    }
+
+        private void btnWhere_Click(object sender, EventArgs e)
+        {
+            lista.Items.Clear();
+            string txt = txtConsulta.Text;
+
+            var res = from nome in lista_nomes where nome.ToLower().Contains(txt) select nome;
+            foreach (var item in res)
+            {
+                
+                lista.Items.Add(item);
+            }
+        }
+    } 
 }
