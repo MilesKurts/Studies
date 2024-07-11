@@ -201,5 +201,22 @@ namespace LINQ_1
                 lista.Items.Add(item.Key + " R$ " + item.Value);
             }
         }
+
+        private void btnGroup_Click(object sender, EventArgs e)
+        {
+            lista.Items.Clear();
+            txtConsulta.Text = "";
+
+            var res = from estado in lista_estados group estado by estado.Value;
+
+            foreach (var grupo  in res)
+            {
+                lista.Items.Add(grupo.Key);
+                foreach(var estado in grupo)
+                {
+                    lista.Items.Add("   " + estado.Key);
+                }
+            }
+        }
     } 
 }

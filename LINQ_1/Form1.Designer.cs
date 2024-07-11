@@ -92,6 +92,7 @@
             this.btnGroup.TabIndex = 5;
             this.btnGroup.Text = "Group";
             this.btnGroup.UseVisualStyleBackColor = true;
+            this.btnGroup.Click += new System.EventHandler(this.btnGroup_Click);
             // 
             // Form1
             // 
