@@ -178,5 +178,28 @@ namespace LINQ_1
                 lista.Items.Add(item);
             }
         }
+
+        private void OrderBy_Click(object sender, EventArgs e)
+        {
+            lista.Items.Clear();
+            string txt = txtConsulta.Text;
+
+            // var res = from num in lista_numeros orderby num descending where num <= 10 select num;
+
+            //var res = from nome in lista_nomes orderby nome  select nome;
+
+            //foreach (var n in res)
+            //{
+            //    lista.Items.Add(n);
+            //}
+
+
+            var res = from produto in lista_produtos orderby produto.Key select produto;
+            
+            foreach(KeyValuePair<string, double> item in res)
+            {
+                lista.Items.Add(item.Key + " R$ " + item.Value);
+            }
+        }
     } 
 }

@@ -32,6 +32,8 @@
             this.txtConsulta = new System.Windows.Forms.TextBox();
             this.btExecutar = new System.Windows.Forms.Button();
             this.btnWhere = new System.Windows.Forms.Button();
+            this.OrderBy = new System.Windows.Forms.Button();
+            this.btnGroup = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lista
@@ -72,11 +74,32 @@
             this.btnWhere.UseVisualStyleBackColor = true;
             this.btnWhere.Click += new System.EventHandler(this.btnWhere_Click);
             // 
+            // OrderBy
+            // 
+            this.OrderBy.Location = new System.Drawing.Point(513, 204);
+            this.OrderBy.Name = "OrderBy";
+            this.OrderBy.Size = new System.Drawing.Size(151, 58);
+            this.OrderBy.TabIndex = 4;
+            this.OrderBy.Text = "Order By";
+            this.OrderBy.UseVisualStyleBackColor = true;
+            this.OrderBy.Click += new System.EventHandler(this.OrderBy_Click);
+            // 
+            // btnGroup
+            // 
+            this.btnGroup.Location = new System.Drawing.Point(513, 268);
+            this.btnGroup.Name = "btnGroup";
+            this.btnGroup.Size = new System.Drawing.Size(151, 58);
+            this.btnGroup.TabIndex = 5;
+            this.btnGroup.Text = "Group";
+            this.btnGroup.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnGroup);
+            this.Controls.Add(this.OrderBy);
             this.Controls.Add(this.btnWhere);
             this.Controls.Add(this.btExecutar);
             this.Controls.Add(this.txtConsulta);
@@ -94,6 +117,8 @@
         private System.Windows.Forms.TextBox txtConsulta;
         private System.Windows.Forms.Button btExecutar;
         private System.Windows.Forms.Button btnWhere;
+        private System.Windows.Forms.Button OrderBy;
+        private System.Windows.Forms.Button btnGroup;
     }
 }
 
