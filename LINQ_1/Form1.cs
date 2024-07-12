@@ -218,5 +218,13 @@ namespace LINQ_1
                 }
             }
         }
+
+        private void btnAgregacao_Click(object sender, EventArgs e)
+        {
+            int cont1 = lista_nomes.Count();
+            int cont2 = (from nome in lista_nomes where nome.StartsWith("G") select nome).Count();
+            lista.Items.Add(cont1 + " nomes.");
+            lista.Items.Add(cont2 + " Nomes ");
+        }
     } 
 }
