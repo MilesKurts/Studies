@@ -26,6 +26,7 @@ namespace GDI_
             desenhador.Clear(Color.Red);
 
             pictureBox1.BackgroundImage = folha;
+            folha.Save("D:\\Download\\adesenho.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
         }
     }
 }
