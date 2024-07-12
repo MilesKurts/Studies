@@ -211,6 +211,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseDados", "BaseDados\Base
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ_1", "LINQ_1\LINQ_1.csproj", "{27E7E5C2-12DD-41EC-B13E-6386D6EFD5C9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GDI+", "GDI+\GDI+.csproj", "{8670E4CE-1FAA-4A12-9C9B-9B13AD85BBC0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -633,6 +635,10 @@ Global
 		{27E7E5C2-12DD-41EC-B13E-6386D6EFD5C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27E7E5C2-12DD-41EC-B13E-6386D6EFD5C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{27E7E5C2-12DD-41EC-B13E-6386D6EFD5C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8670E4CE-1FAA-4A12-9C9B-9B13AD85BBC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8670E4CE-1FAA-4A12-9C9B-9B13AD85BBC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8670E4CE-1FAA-4A12-9C9B-9B13AD85BBC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8670E4CE-1FAA-4A12-9C9B-9B13AD85BBC0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
