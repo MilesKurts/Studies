@@ -80,20 +80,56 @@ namespace GDI_
 
             #region Curvas
 
-            Pen lapis = new Pen(Color.Black,5);
+            //Pen lapis = new Pen(Color.Black,5);
+
+            //Point[] pontos =
+            //{
+            //    new Point(100,50),
+            //    new Point(200,150),
+            //    new Point(300,100),
+            //    new Point(500,250),
+            //    new Point(300,300)
+            //};
+
+            ////desenhador.DrawCurve(lapis, pontos,1.5f);
+            ////desenhador.DrawClosedCurve(lapis,pontos,1.5f,FillMode.Alternate);
+            //desenhador.FillClosedCurve(Brushes.Red, pontos,FillMode.Winding,1.5f);
+
+            #endregion
+
+            #region Arcos 
+            //Pen lapis = new Pen(Color.Black,5);
+
+            //Rectangle rect = new Rectangle(100, 100, 400, 200);
+
+            ////desenhador.DrawRectangle(lapis, rect);
+            //desenhador.DrawArc(lapis,rect,0f,270f);
+
+
+            #endregion
+
+            #region Beziers
+            Pen lapis = new Pen(Color.Black, 5);
+
+            Point p1 = new Point(50, 300);
+            Point p2 = new Point(200, 400);
+            Point p3 = new Point(300, 10);
+            Point p4 = new Point(500, 100);
+
+            //desenhador.DrawBezier(lapis, p1, p2, p3, p4);
 
             Point[] pontos =
             {
-                new Point(100,50),
-                new Point(200,150),
-                new Point(300,100),
-                new Point(500,250),
-                new Point(300,300)
-            };
+            new Point(50, 300),
+            new Point(150, 350),
+            new Point(300, 100),
+            new Point(400, 150),
+            new Point(500, 400),
+            new Point(550, 10),
+            new Point(600, 100)
+        };
+            desenhador.DrawBeziers(lapis,pontos);
 
-            //desenhador.DrawCurve(lapis, pontos,1.5f);
-            //desenhador.DrawClosedCurve(lapis,pontos,1.5f,FillMode.Alternate);
-            desenhador.FillClosedCurve(Brushes.Red, pontos,FillMode.Winding,1.5f);
             #endregion
             pictureBox1.BackgroundImage = folha;
             folha.Save("D:\\Download\\adesenho.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
