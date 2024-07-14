@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Drawing2D;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -41,7 +42,13 @@ namespace GDI_
             {
                 rect1 , rect2 , rect3
             };
-            desenhador.DrawRectangles(lapis,rectangles);
+            desenhador.DrawRectangles(lapis, rectangles);
+
+            Brush pincel = new SolidBrush(Color.Green);
+            Brush pincel2 = new LinearGradientBrush(rect3,Color.Gray, Color.Goldenrod,90);
+            desenhador.FillRectangle(pincel2,rect3);
+
+            desenhador.FillRectangles(pincel2,rectangles);
 
             pictureBox1.BackgroundImage = folha;
             folha.Save("D:\\Download\\adesenho.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
