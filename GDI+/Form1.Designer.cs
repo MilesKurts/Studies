@@ -37,13 +37,13 @@
             // 
             this.pictureBox1.Location = new System.Drawing.Point(10, 8);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(594, 271);
+            this.pictureBox1.Size = new System.Drawing.Size(705, 368);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // btnDesenhar
             // 
-            this.btnDesenhar.Location = new System.Drawing.Point(333, 297);
+            this.btnDesenhar.Location = new System.Drawing.Point(546, 382);
             this.btnDesenhar.Name = "btnDesenhar";
             this.btnDesenhar.Size = new System.Drawing.Size(254, 88);
             this.btnDesenhar.TabIndex = 1;
@@ -55,7 +55,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(900, 498);
             this.Controls.Add(this.btnDesenhar);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";

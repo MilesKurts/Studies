@@ -27,9 +27,21 @@ namespace GDI_
 
 
             Pen lapis = new Pen(Color.Black, 5);
+            Pen lapis2 = new Pen(Color.Blue, 10);
+
+            Rectangle rect1 = new Rectangle(100, 50, 300, 200);
+            Rectangle rect2 = new Rectangle(50, 250, 100, 50);
+            Rectangle rect3 = new Rectangle(150, 150, 120, 100);
 
             //lapis, cordenada x cordenada y, largura,altura
-            desenhador.DrawRectangle(lapis, 100, 50,300,200);
+            //desenhador.DrawRectangle(lapis, rect1);
+            //desenhador.DrawRectangle(lapis2, 110,100,250,250);
+
+            Rectangle[] rectangles =
+            {
+                rect1 , rect2 , rect3
+            };
+            desenhador.DrawRectangles(lapis,rectangles);
 
             pictureBox1.BackgroundImage = folha;
             folha.Save("D:\\Download\\adesenho.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
