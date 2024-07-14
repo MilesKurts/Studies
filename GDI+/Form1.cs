@@ -64,20 +64,37 @@ namespace GDI_
             #endregion
 
             #region Poligonos
-            Pen lapis = new Pen(Color.Black, 5);
+            //Pen lapis = new Pen(Color.Black, 5);
 
-            Point[] pontos = {
-                new Point(100,100),
-                new Point(300,200),
-                new Point(250,250),
-                new Point(100,200)
-                };
-            //desenhador.DrawPolygon(lapis, pontos);
-            Brush pincel = new LinearGradientBrush(new Rectangle(100,100,200,200), Color.Red,Color.Yellow,45);
-            desenhador.FillPolygon(pincel,pontos);
+            //Point[] pontos = {
+            //    new Point(100,100),
+            //    new Point(300,200),
+            //    new Point(250,250),
+            //    new Point(100,200)
+            //    };
+            ////desenhador.DrawPolygon(lapis, pontos);
+            //Brush pincel = new LinearGradientBrush(new Rectangle(100,100,200,200), Color.Red,Color.Yellow,45);
+            //desenhador.FillPolygon(pincel,pontos);
 
             #endregion
 
+            #region Curvas
+
+            Pen lapis = new Pen(Color.Black,5);
+
+            Point[] pontos =
+            {
+                new Point(100,50),
+                new Point(200,150),
+                new Point(300,100),
+                new Point(500,250),
+                new Point(300,300)
+            };
+
+            //desenhador.DrawCurve(lapis, pontos,1.5f);
+            //desenhador.DrawClosedCurve(lapis,pontos,1.5f,FillMode.Alternate);
+            desenhador.FillClosedCurve(Brushes.Red, pontos,FillMode.Winding,1.5f);
+            #endregion
             pictureBox1.BackgroundImage = folha;
             folha.Save("D:\\Download\\adesenho.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
         }
