@@ -24,7 +24,7 @@ namespace GDI_
 
             Graphics desenhador = Graphics.FromImage(folha);
 
-            desenhador.Clear(Color.Red);
+            desenhador.Clear(Color.White);
 
 
             //Pen lapis = new Pen(Color.Black, 5);
@@ -64,8 +64,17 @@ namespace GDI_
             #endregion
 
             #region Poligonos
+            Pen lapis = new Pen(Color.Black, 5);
 
-
+            Point[] pontos = {
+                new Point(100,100),
+                new Point(300,200),
+                new Point(250,250),
+                new Point(100,200)
+                };
+            //desenhador.DrawPolygon(lapis, pontos);
+            Brush pincel = new LinearGradientBrush(new Rectangle(100,100,200,200), Color.Red,Color.Yellow,45);
+            desenhador.FillPolygon(pincel,pontos);
 
             #endregion
 
