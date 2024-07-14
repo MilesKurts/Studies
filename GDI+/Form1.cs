@@ -25,6 +25,12 @@ namespace GDI_
 
             desenhador.Clear(Color.Red);
 
+
+            Pen lapis = new Pen(Color.Black, 5);
+
+            //lapis, cordenada x cordenada y, largura,altura
+            desenhador.DrawRectangle(lapis, 100, 50,300,200);
+
             pictureBox1.BackgroundImage = folha;
             folha.Save("D:\\Download\\adesenho.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
         }
