@@ -27,28 +27,47 @@ namespace GDI_
             desenhador.Clear(Color.Red);
 
 
-            Pen lapis = new Pen(Color.Black, 5);
-            Pen lapis2 = new Pen(Color.Blue, 10);
+            //Pen lapis = new Pen(Color.Black, 5);
+            //Pen lapis2 = new Pen(Color.Blue, 10);
 
-            Rectangle rect1 = new Rectangle(100, 50, 300, 200);
-            Rectangle rect2 = new Rectangle(50, 250, 100, 50);
-            Rectangle rect3 = new Rectangle(150, 150, 120, 100);
+
+            //Rectangle rect2 = new Rectangle(50, 250, 100, 50);
+            //Rectangle rect3 = new Rectangle(150, 150, 120, 100);
 
             //lapis, cordenada x cordenada y, largura,altura
             //desenhador.DrawRectangle(lapis, rect1);
             //desenhador.DrawRectangle(lapis2, 110,100,250,250);
 
-            Rectangle[] rectangles =
-            {
-                rect1 , rect2 , rect3
-            };
-            desenhador.DrawRectangles(lapis, rectangles);
+            //Rectangle[] rectangles =
+            //{
+            //    rect1 , rect2 , rect3
+            //};
+            //desenhador.DrawRectangles(lapis, rectangles);
 
-            Brush pincel = new SolidBrush(Color.Green);
-            Brush pincel2 = new LinearGradientBrush(rect3,Color.Gray, Color.Goldenrod,90);
-            desenhador.FillRectangle(pincel2,rect3);
+            //Brush pincel = new SolidBrush(Color.Green);
+            //Brush pincel2 = new LinearGradientBrush(rect3,Color.Gray, Color.Goldenrod,90);
+            //desenhador.FillRectangle(pincel2,rect3);
 
-            desenhador.FillRectangles(pincel2,rectangles);
+            //desenhador.FillRectangles(pincel2,rectangles);
+
+            #region Elipse e circulos
+
+            //Pen lapis3 = new Pen(Color.Black, 5);
+            //Rectangle rect1 = new Rectangle(50, 50, 100, 200);
+
+            //desenhador.DrawRectangle(lapis3, rect1);
+            //desenhador.DrawEllipse(lapis3, rect1);
+
+            //Brush pincel = new SolidBrush(Color.Black);
+
+            //desenhador.FillEllipse(Brushes.Gray, rect1);
+            #endregion
+
+            #region Poligonos
+
+
+
+            #endregion
 
             pictureBox1.BackgroundImage = folha;
             folha.Save("D:\\Download\\adesenho.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
