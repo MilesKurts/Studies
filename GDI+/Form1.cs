@@ -156,16 +156,27 @@ namespace GDI_
 
             #endregion
 
-#region Desenhar Strings
+            #region Desenhar Strings
 
-            string texto = "Miles Kurts";
-            Font letra = new Font("Arial", 28,FontStyle.Bold,GraphicsUnit.Point);
-            Point ponto = new Point(50, 100);
-            Brush pincel = new SolidBrush(Color.Black);
+            //string texto = "Miles Kurts";
+            //Font letra = new Font("Arial", 28,FontStyle.Bold,GraphicsUnit.Point);
+            //Point ponto = new Point(50, 100);
+            //Brush pincel = new SolidBrush(Color.Black);
 
-            desenhador.DrawString(texto,letra,pincel,ponto);
+            //desenhador.DrawString(texto,letra,pincel,ponto);
 
-#endregion
+            #endregion
+
+            #region Desenhar Imagens
+
+
+            Image imgOrigem = Image.FromFile(Application.StartupPath + @"C:\Users\Mile kurtz\source\repos\Portfolio_Companies\Portfolio_Companies\images\bill.jpg");
+
+            Rectangle oringem = new Rectangle(0,0, imgOrigem.Width, imgOrigem.Height);
+            Rectangle destino = new Rectangle(0,0, imgOrigem.Width,imgOrigem.Height);
+            desenhador.DrawImage(imgOrigem,destino,oringem,GraphicsUnit.Pixel);
+
+            #endregion
             pictureBox1.BackgroundImage = folha;
             folha.Save("D:\\Download\\adesenho.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
         }
