@@ -109,26 +109,48 @@ namespace GDI_
             #endregion
 
             #region Beziers
+            //    Pen lapis = new Pen(Color.Black, 5);
+
+            //    Point p1 = new Point(50, 300);
+            //    Point p2 = new Point(200, 400);
+            //    Point p3 = new Point(300, 10);
+            //    Point p4 = new Point(500, 100);
+
+            //    //desenhador.DrawBezier(lapis, p1, p2, p3, p4);
+
+            //    Point[] pontos =
+            //    {
+            //    new Point(50, 300),
+            //    new Point(150, 350),
+            //    new Point(300, 100),
+            //    new Point(400, 150),
+            //    new Point(500, 400),
+            //    new Point(550, 10),
+            //    new Point(600, 100)
+            //};
+            //    desenhador.DrawBeziers(lapis,pontos);
+
+            #endregion
+
+            #region pie
+
+            //Pen lapis = new Pen(Color.Black, 5);
+            //Rectangle rect = new Rectangle(50, 50, 300, 300);
+
+            //desenhador.DrawRectangle(lapis, rect);
+            ////desenhador.DrawPie(lapis, rect, 270, 90);
+            //desenhador.FillPie(Brushes.Red, rect, 270, 90);  
+
+            #endregion
+
+            #region Path
+
             Pen lapis = new Pen(Color.Black, 5);
+            GraphicsPath graphicsPath = new GraphicsPath(FillMode.Alternate);
 
-            Point p1 = new Point(50, 300);
-            Point p2 = new Point(200, 400);
-            Point p3 = new Point(300, 10);
-            Point p4 = new Point(500, 100);
+            graphicsPath.AddEllipse(new RectangleF(10,10,100,150));
 
-            //desenhador.DrawBezier(lapis, p1, p2, p3, p4);
-
-            Point[] pontos =
-            {
-            new Point(50, 300),
-            new Point(150, 350),
-            new Point(300, 100),
-            new Point(400, 150),
-            new Point(500, 400),
-            new Point(550, 10),
-            new Point(600, 100)
-        };
-            desenhador.DrawBeziers(lapis,pontos);
+            desenhador.DrawPath(lapis, graphicsPath);
 
             #endregion
             pictureBox1.BackgroundImage = folha;
