@@ -145,14 +145,27 @@ namespace GDI_
 
             #region Path
 
-            Pen lapis = new Pen(Color.Black, 5);
-            GraphicsPath graphicsPath = new GraphicsPath(FillMode.Alternate);
+            //Pen lapis = new Pen(Color.Black, 5);
+            //GraphicsPath graphicsPath = new GraphicsPath(FillMode.Alternate);
 
-            graphicsPath.AddEllipse(new RectangleF(10,10,100,150));
+            //graphicsPath.AddEllipse(new RectangleF(10,10,100,150));
+            //graphicsPath.AddEllipse(new RectangleF(55, 10, 100, 150));
 
-            desenhador.DrawPath(lapis, graphicsPath);
+
+            //desenhador.DrawPath(lapis, graphicsPath);
 
             #endregion
+
+#region Desenhar Strings
+
+            string texto = "Miles Kurts";
+            Font letra = new Font("Arial", 28,FontStyle.Bold,GraphicsUnit.Point);
+            Point ponto = new Point(50, 100);
+            Brush pincel = new SolidBrush(Color.Black);
+
+            desenhador.DrawString(texto,letra,pincel,ponto);
+
+#endregion
             pictureBox1.BackgroundImage = folha;
             folha.Save("D:\\Download\\adesenho.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
         }
