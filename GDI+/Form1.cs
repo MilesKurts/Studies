@@ -170,12 +170,11 @@ namespace GDI_
             #region Desenhar Imagens
 
 
-            Image imgOrigem = Image.FromFile(Application.StartupPath + @"C:\Users\Mile kurtz\source\repos\Portfolio_Companies\Portfolio_Companies\images\bill.jpg");
+            Image imgOrigem1 = Image.FromFile(Application.StartupPath + @"\imagens\bill.jpg");
+            Rectangle origem = new Rectangle(0, 0, imgOrigem1.Width, imgOrigem1.Height);
+            Rectangle destino = new Rectangle(100, 50, imgOrigem1.Width/2, imgOrigem1.Height/2);
 
-            Rectangle oringem = new Rectangle(0,0, imgOrigem.Width, imgOrigem.Height);
-            Rectangle destino = new Rectangle(0,0, imgOrigem.Width,imgOrigem.Height);
-            desenhador.DrawImage(imgOrigem,destino,oringem,GraphicsUnit.Pixel);
-
+            desenhador.DrawImage(imgOrigem1,destino,origem,GraphicsUnit.Pixel);
             #endregion
             pictureBox1.BackgroundImage = folha;
             folha.Save("D:\\Download\\adesenho.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
