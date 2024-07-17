@@ -17,9 +17,13 @@ namespace Imprimir
         int largura;
         int altura;
         int num_linhas;
+        int pagina;
+        int num_Paginas;
         public Form1()
         {
             InitializeComponent();
+            pagina = 0;
+            num_Paginas = 0;
         }
 
         private void btnImprimir_Click(object sender, EventArgs e)
@@ -211,13 +215,40 @@ namespace Imprimir
                     // Mudar de Pagina
                     y = 50;
                     e.HasMorePages = true;
-                    //num_paginas++;
+                    num_Paginas++;
                     break;
                 }
 
                 }
                 #endregion
             }
+
+        private void btnVisualizar_Click(object sender, EventArgs e)
+        {
+            largura = printDocument1.DefaultPageSettings.Bounds.Width;
+            altura = printDocument1.DefaultPageSettings.Bounds.Height;
+            x = 50;
+            y = 50;
+            num_linhas = 0;
+
+            printPreviewControl1.Document = printDocument1;
         }
+
+        private void btnAnterior_Click(object sender, EventArgs e)
+        {
+            if (pagina > 0) 
+            {
+                printPreviewControl1.StartPage = --pagina;
+            }
+        }
+
+        private void btnProxima_Click(object sender, EventArgs e)
+        {
+            if (pagina < num_Paginas)
+            {
+                printPreviewControl1.StartPage = ++pagina;
+            }
+        }
+    }
     }
 
