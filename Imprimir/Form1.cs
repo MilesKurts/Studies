@@ -34,8 +34,16 @@ namespace Imprimir
             x = 50;
             y = 50;
             num_linhas = 0;
+            printDialog1.Document = printDocument1;
+            if (printDialog1.ShowDialog() != DialogResult.Cancel)
+            {
+                largura = printDocument1.DefaultPageSettings.Bounds.Width;
+                altura = printDocument1.DefaultPageSettings.Bounds.Height;
+                printDocument1.PrinterSettings = printDialog1.PrinterSettings;
+                printDocument1.Print();
+            }
 
-            printDocument1.Print();
+            
         }
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
