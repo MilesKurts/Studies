@@ -29,7 +29,7 @@ namespace Imprimir
             altura = printDocument1.DefaultPageSettings.Bounds.Height;
             x = 50;
             y = 50;
-            num_linhas = 1;
+            num_linhas = 0;
 
             printDocument1.Print();
         }
@@ -80,32 +80,144 @@ namespace Imprimir
 
             List<string> linhas = new List<string>()
             {
-                "Olá! Estamos felizes", "em informar que você", "avançou para a próxima etapa", "do nosso processo seletivo do Pecege!", "Parabéns pela sua dedicação e pelo interesse", "em fazer parte da nossa equipe.", "Gostaríamos de convidá-lo(a) para uma entrevista", "com a nossa Tech Recruiter.", "Esta será uma oportunidade para conhecermos mais sobre a sua trajetória profissional", "e também sobre você. Em breve entraremos em contato através do whatsapp."
+                "1. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "2. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "3. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "4. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "5. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "6. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "7. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "8. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "9. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "10. Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+                "1. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "2. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "3. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "4. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "5. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "6. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "7. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "8. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "9. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "20. Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+                "1. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "2. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "3. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "4. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "5. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "6. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "7. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "8. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "9. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "30. Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+                "1. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "2. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "3. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "4. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "5. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "6. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "7. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "8. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "9. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "40. Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+                "1. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "2. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "3. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "4. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "5. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "6. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "7. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "8. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "9. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "50. Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+                "1. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "2. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "3. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "4. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "5. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "6. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "7. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "8. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "9. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "60. Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+                "1. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "2. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "3. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "4. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "5. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "6. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "7. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "8. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "9. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "70. Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+                "1. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "2. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "3. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "4. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "5. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "6. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "7. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "8. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "9. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "80. Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+                "1. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "2. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "3. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "4. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "5. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "6. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "7. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "8. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "9. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "90. Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+                "1. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "2. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "3. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "4. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "5. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "6. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "7. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "8. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "9. Lorem, ipsum dolor sit amet consectetur adipisicing elit. ",
+                "100. Lorem, ipsum dolor sit amet consectetur adipisicing elit."
             };
 
-            Rectangle area = printDocument1.DefaultPageSettings.Bounds;
-
-            string titulo = "Titulo da Pagina.";
+            string titulo = "Titulo da Página";
             Font letraTitulo = new Font("Verdana", 24, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
-            Brush pincelTitulo = new SolidBrush(Color.Plum);
-            Rectangle areaTitulo = new Rectangle(x + 50, y + 100, largura - 100, 100);
+            Brush pincelTitulo = new SolidBrush(Color.Red);
+            Rectangle areaTitulo = new Rectangle(x, y, largura - 100, 100);
             StringFormat formatoTitulo = new StringFormat();
             formatoTitulo.Alignment = StringAlignment.Center;
             formatoTitulo.LineAlignment = StringAlignment.Center;
 
-            string texto = "Olá! Estamos felizes em informar que você avançou para a próxima etapa do nosso processo seletivo do Pecege! Parabéns pela sua dedicação e pelo interesse em fazer parte da nossa equipe. Gostaríamos de convidá-lo(a) para uma entrevista com a nossa Tech Recruiter. Esta será uma oportunidade para conhecermos mais sobre a sua trajetória profissional e também sobre você. Em breve entraremos em contato através do whatsapp.";
+            //// Desenhar o documetno para ser impresso
             Font letra = new Font("Arial", 18, FontStyle.Bold, GraphicsUnit.Point);
-            Brush pincel1 = new SolidBrush(Color.Black);
-            Rectangle areaTexto = new Rectangle(x + 50, y + 200, largura - 100, altura - 400);
+            Brush pincel = new SolidBrush(Color.Black);
 
-            //desenhar o documento para ser impresso
-            e.Graphics.DrawString(titulo, letraTitulo, pincelTitulo, areaTitulo, formatoTitulo);
-            e.Graphics.DrawString(texto, letra, pincel1, areaTexto);
+            while (num_linhas < linhas.Count)
+            {
+                if (num_linhas == 0)
+                {
+                    e.Graphics.DrawString(titulo, letraTitulo, pincelTitulo, areaTitulo, formatoTitulo);
+                    y += 150;
+                }
 
-            e.Graphics.DrawRectangle(new Pen(Color.Blue), areaTitulo);
-            e.Graphics.DrawRectangle(new Pen(Color.Red, 5), areaTexto);
+                e.Graphics.DrawString(linhas[num_linhas], letra, pincel, new Point(x, y));
+                y += 30;
+                num_linhas++;
 
-            #endregion
+                if (y >= altura - 50)
+                {
+                    // Mudar de Pagina
+                    y = 50;
+                    e.HasMorePages = true;
+                    //num_paginas++;
+                    break;
+                }
+
+                }
+                #endregion
+            }
         }
     }
-}
+
