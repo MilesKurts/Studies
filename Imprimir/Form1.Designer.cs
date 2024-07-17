@@ -28,19 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnImprimir = new System.Windows.Forms.Button();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewControl1 = new System.Windows.Forms.PrintPreviewControl();
             this.btnVisualizar = new System.Windows.Forms.Button();
             this.btnAnterior = new System.Windows.Forms.Button();
             this.btnProxima = new System.Windows.Forms.Button();
+            this.btnVisuPadrao = new System.Windows.Forms.Button();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.SuspendLayout();
             // 
             // btnImprimir
             // 
-            this.btnImprimir.Location = new System.Drawing.Point(626, 349);
+            this.btnImprimir.Location = new System.Drawing.Point(567, 413);
             this.btnImprimir.Name = "btnImprimir";
-            this.btnImprimir.Size = new System.Drawing.Size(117, 53);
+            this.btnImprimir.Size = new System.Drawing.Size(104, 53);
             this.btnImprimir.TabIndex = 0;
             this.btnImprimir.Text = "Imprimir";
             this.btnImprimir.UseVisualStyleBackColor = true;
@@ -87,11 +90,32 @@
             this.btnProxima.UseVisualStyleBackColor = true;
             this.btnProxima.Click += new System.EventHandler(this.btnProxima_Click);
             // 
+            // btnVisuPadrao
+            // 
+            this.btnVisuPadrao.Location = new System.Drawing.Point(685, 413);
+            this.btnVisuPadrao.Name = "btnVisuPadrao";
+            this.btnVisuPadrao.Size = new System.Drawing.Size(104, 53);
+            this.btnVisuPadrao.TabIndex = 5;
+            this.btnVisuPadrao.Text = "Visualizar Padrao";
+            this.btnVisuPadrao.UseVisualStyleBackColor = true;
+            this.btnVisuPadrao.Click += new System.EventHandler(this.btnVisuPadrao_Click);
+            // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 531);
+            this.Controls.Add(this.btnVisuPadrao);
             this.Controls.Add(this.btnProxima);
             this.Controls.Add(this.btnAnterior);
             this.Controls.Add(this.btnVisualizar);
@@ -111,6 +135,8 @@
         private System.Windows.Forms.Button btnVisualizar;
         private System.Windows.Forms.Button btnAnterior;
         private System.Windows.Forms.Button btnProxima;
+        private System.Windows.Forms.Button btnVisuPadrao;
+        private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
     }
 }
 

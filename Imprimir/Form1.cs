@@ -249,6 +249,18 @@ namespace Imprimir
                 printPreviewControl1.StartPage = ++pagina;
             }
         }
+
+        private void btnVisuPadrao_Click(object sender, EventArgs e)
+        {
+            largura = printDocument1.DefaultPageSettings.Bounds.Width;
+            altura = printDocument1.DefaultPageSettings.Bounds.Height;
+            x = 50;
+            y = 50;
+            num_linhas = 0;
+
+            printPreviewDialog1.Document = printDocument1;
+            printPreviewDialog1.ShowDialog();
+        }
     }
     }
 
