@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Operacoes;
 
 namespace methods
 {
@@ -52,6 +53,13 @@ namespace methods
         {
             int result = Sum(Convert.ToInt32(textBox1.Text), Convert.ToInt32(textBox2.Text));
             MessageBox.Show(result.ToString());
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            Matematica.Valor1 = 10;
+            Matematica.Valor2 = 20;
+            label1.Text = Matematica.Somar().ToString();
         }
     }
 }
