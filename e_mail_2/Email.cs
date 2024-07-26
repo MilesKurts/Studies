@@ -10,81 +10,43 @@ using System.Threading.Tasks;
 
 namespace e_mail_2
 {
-    public class Email
+    class Program
     {
-        
-
-        public string Provedor { get; private set; }
-        public string Username { get; private set; }
-        public string Password { get; private set; }
-
-        public Email(string provedor, string username, string password)
+        static void Main()
         {
-            Provedor = provedor;
-            Username = username;
-            Password = password;
-        }
-        public void SendEmail(List<string> emailsTo, string subject, string body, List<string> attachements) 
-        {
-            var message = PrepareteMessage(emailsTo, subject, body, attachements);
-
-            SendEmailBySmtp(message);
-        }
-        private MailMessage PrepareteMessage(List<string> emailsTo, string subject, string body, List<string> attachements) 
-        {
-            var mail = new MailMessage();
-            mail.From = new MailAddress(Username);
-            foreach (var email in emailsTo)
+            try
             {
-                if (ValidateEmail(email))
+                var fromAddress = new MailAddress("yourEmail@example.com", "Your Name");
+                var toAddress = new MailAddress("recipient@example.com", "Recipient Name");
+                const string fromPassword = "yourEmailPassword";
+                const string subject = "Subject";
+                const string body = "Email Body";
+
+                var smtp = new SmtpClient
                 {
-                    mail.To.Add(email);
+                    Host = "smtp.example.com",
+                    Port = 587,
+                    EnableSsl = true,
+                    DeliveryMethod = SmtpDeliveryMethod.Network,
+                    UseDefaultCredentials = false,
+                    Credentials = new NetworkCredential(fromAddress.Address, fromPassword)
+                };
+
+                using (var message = new MailMessage(fromAddress, toAddress)
+                {
+                    Subject = subject,
+                    Body = body
+                })
+                {
+                    smtp.Send(message);
                 }
 
+                Console.WriteLine("Email sent successfully!");
             }
-            mail.Subject = subject;
-            mail.Body = body;
-            mail.IsBodyHtml = true;
-
-            foreach (var file in attachements)
+            catch (Exception ex)
             {
-                var data = new Attachment(file, MediaTypeNames.Application.Octet);
-                ContentDisposition disposition = data.ContentDisposition;
-                disposition.CreationDate = System.IO.File.GetCreationTime(file);
-                disposition.ModificationDate = System.IO.File.GetLastWriteTime(file);
-                disposition.ReadDate = System.IO.File.GetLastAccessTime(file);
-
-                mail.Attachments.Add(data);
-            }
-            return mail;
-        }
-
-        public bool ValidateEmail(string email)
-        {
-            Regex expression = new Regex(@"\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}");
-            if (expression.IsMatch(email))
-            {
-                return true;
-            }
-            else
-            {
-                return false;
+                Console.WriteLine("Exception caught in CreateTestMessage2(): {0}", ex.ToString());
             }
         }
-
-        private void SendEmailBySmtp(MailMessage message)
-        {
-            SmtpClient smtpClient = new SmtpClient();
-            smtpClient.Host = Provedor;
-            smtpClient.Port = 587;
-            smtpClient.EnableSsl = true;
-            smtpClient.Timeout = 155000;
-            smtpClient.UseDefaultCredentials = false;
-            smtpClient.Credentials = new NetworkCredential(Username, Password);
-            smtpClient.Send(message);
-            smtpClient.Dispose();
-
-
-        }
-}
+    }
 }

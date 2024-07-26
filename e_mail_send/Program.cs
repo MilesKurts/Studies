@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 using System.Net.Mail;
 using System.Net;
 
+
 namespace e_mail_send
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            MailMessage mailMessage = new MailMessage("","");
+            MailMessage mailMessage = new MailMessage("mauriciojuniorrosa8@gmail.com","milesheremau@gmail.com");
             mailMessage.Subject = "Test";
             mailMessage.IsBodyHtml = true;
             mailMessage.Body = "<p>Text exemple!</p>";
