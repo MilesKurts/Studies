@@ -213,6 +213,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Operacoes", "Operacoes\Oper
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Programacao_Assincrona", "Programacao_Assincrona\Programacao_Assincrona.csproj", "{FDAAFACE-B44F-448B-9DDE-01FEFD880C92}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "send_gmail", "send_gmail\send_gmail.csproj", "{D149E4F8-0839-455A-8351-09D110181DB9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -639,6 +641,10 @@ Global
 		{FDAAFACE-B44F-448B-9DDE-01FEFD880C92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDAAFACE-B44F-448B-9DDE-01FEFD880C92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDAAFACE-B44F-448B-9DDE-01FEFD880C92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D149E4F8-0839-455A-8351-09D110181DB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D149E4F8-0839-455A-8351-09D110181DB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D149E4F8-0839-455A-8351-09D110181DB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D149E4F8-0839-455A-8351-09D110181DB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
