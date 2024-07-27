@@ -13,21 +13,29 @@ namespace e_mail_send
     {
         static void Main(string[] args)
         {
-            MailMessage mailMessage = new MailMessage("mauriciojuniorrosa8@gmail.com","milesheremau@gmail.com");
-            mailMessage.Subject = "Test";
+            MailMessage mailMessage = new MailMessage();
+            mailMessage.From = new MailAddress("your-email@example.com");
+            mailMessage.To.Add("recipient-email@example.com");
+            mailMessage.Subject = "Test Email";
+            mailMessage.Body = "<p>Text example!</p>";
             mailMessage.IsBodyHtml = true;
-            mailMessage.Body = "<p>Text exemple!</p>";
-            mailMessage.SubjectEncoding = Encoding.GetEncoding("UTF-8");
-            mailMessage.BodyEncoding = Encoding.GetEncoding("UTF-8");
 
-            SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587);
-
-            smtpClient.UseDefaultCredentials = false;
-            smtpClient.Credentials = new NetworkCredential("","");
-
+            // Create the SMTP client
+            SmtpClient smtpClient = new SmtpClient("smtp.example.com", 587);
+            smtpClient.Credentials = new NetworkCredential("your-email@example.com", "your-email-password");
             smtpClient.EnableSsl = true;
 
-            smtpClient.Send(mailMessage);
+            // Send the email
+            try
+            {
+                smtpClient.Send(mailMessage);
+                Console.WriteLine("Email sent successfully.");
+            }
+            catch (SmtpException ex)
+            {
+                Console.WriteLine("Error: " + ex.Message);
+            }
+            Console.ReadKey();
         }
     }
 }
