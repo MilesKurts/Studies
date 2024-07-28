@@ -12,8 +12,8 @@ namespace send_gmail
     {
         static void Main(string[] args)
         {
-            string fromMail = Console.ReadLine();
-            string fromPassword = Console.ReadLine();
+            string fromMail = "youremail@email.com";
+            string fromPassword = "";
 
             MailMessage message = new MailMessage();
             message.From = new MailAddress(fromMail);
