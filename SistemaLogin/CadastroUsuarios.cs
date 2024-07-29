@@ -9,7 +9,7 @@ namespace SistemaLogin
     class CadastroUsuarios
     {
         private static Usuario[] usuarios = {
-            new Usuario(){Nome = "Gabriel", Senha = "abc123"},
+            new Usuario(){Nome = "Miles", Senha = "123456"},
             new Usuario(){Nome = "Danny", Senha = "123abc" },
             new Usuario(){Nome = "Arthur", Senha = "abcd" }
         };
