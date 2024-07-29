@@ -54,6 +54,7 @@
             this.labelResultado.Size = new System.Drawing.Size(906, 120);
             this.labelResultado.TabIndex = 0;
             this.labelResultado.Text = "Resultado";
+            this.labelResultado.Click += new System.EventHandler(this.labelResultado_Click);
             // 
             // lista
             // 
@@ -205,6 +206,7 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.lista)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

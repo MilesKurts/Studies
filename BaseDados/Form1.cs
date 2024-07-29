@@ -213,6 +213,16 @@ namespace BaseDados
             txtEmail.Text = "";
             }
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelResultado_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     }
 
