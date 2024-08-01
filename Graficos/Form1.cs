@@ -93,7 +93,7 @@ namespace Graficos
 
         private void grafico3D_CheckedChanged(object sender, EventArgs e)
         {
-
+            grafico.ChartAreas[0].Area3DStyle.Enable3D = grafico3D.Checked;
         }
 
         private void btnAleatório_Click(object sender, EventArgs e)
@@ -145,7 +145,7 @@ namespace Graficos
             grafico.Series[0].Points.AddXY(contadorX++, y);
 
             dataValores.Rows.Add(contadorX, y);
-            dataValores.CurrentCell = dataValores.Rows[]
+            dataValores.CurrentCell = dataValores.Rows[dataValores.Rows.Count - 1].Cells[0];
         }
     }
 }
