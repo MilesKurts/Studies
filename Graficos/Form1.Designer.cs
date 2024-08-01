@@ -28,16 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.xValor = new System.Windows.Forms.TextBox();
             this.Yvalor = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnInserirValores = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataValores = new System.Windows.Forms.DataGridView();
             this.x = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.y = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnLimpar = new System.Windows.Forms.Button();
@@ -46,7 +47,8 @@
             this.grafico3D = new System.Windows.Forms.CheckBox();
             this.btnAleatório = new System.Windows.Forms.Button();
             this.grafico = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.dataValores)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grafico)).BeginInit();
             this.SuspendLayout();
             // 
@@ -109,25 +111,25 @@
             this.btnInserirValores.UseVisualStyleBackColor = true;
             this.btnInserirValores.Click += new System.EventHandler(this.btnInserirValores_Click);
             // 
-            // dataGridView1
+            // dataValores
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataValores.AllowUserToAddRows = false;
+            this.dataValores.AllowUserToDeleteRows = false;
+            this.dataValores.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataValores.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dataValores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataValores.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.x,
             this.y});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 183);
-            this.dataGridView1.MultiSelect = false;
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(294, 159);
-            this.dataGridView1.TabIndex = 6;
-            this.dataGridView1.SizeChanged += new System.EventHandler(this.dataGridView1_SizeChanged);
+            this.dataValores.Location = new System.Drawing.Point(12, 183);
+            this.dataValores.MultiSelect = false;
+            this.dataValores.Name = "dataValores";
+            this.dataValores.ReadOnly = true;
+            this.dataValores.RowHeadersVisible = false;
+            this.dataValores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataValores.Size = new System.Drawing.Size(294, 159);
+            this.dataValores.TabIndex = 6;
+            this.dataValores.SelectionChanged += new System.EventHandler(this.dataValores_SelectionChanged);
             // 
             // x
             // 
@@ -198,20 +200,27 @@
             // 
             // grafico
             // 
-            chartArea2.Name = "ChartArea1";
-            this.grafico.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.grafico.Legends.Add(legend2);
+            this.grafico.BorderlineWidth = 10;
+            chartArea3.BorderWidth = 2;
+            chartArea3.Name = "ChartArea1";
+            this.grafico.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.grafico.Legends.Add(legend3);
             this.grafico.Location = new System.Drawing.Point(335, 99);
             this.grafico.Name = "grafico";
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series2.Legend = "Legend1";
-            series2.Name = "X vs Y";
-            this.grafico.Series.Add(series2);
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series3.Legend = "Legend1";
+            series3.Name = "X vs Y";
+            this.grafico.Series.Add(series3);
             this.grafico.Size = new System.Drawing.Size(529, 303);
             this.grafico.TabIndex = 12;
             this.grafico.Text = "chart1";
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 500;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
@@ -224,7 +233,7 @@
             this.Controls.Add(this.palleteCor);
             this.Controls.Add(this.tipoGrafico);
             this.Controls.Add(this.btnLimpar);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataValores);
             this.Controls.Add(this.btnInserirValores);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.Yvalor);
@@ -234,7 +243,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataValores)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grafico)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -249,7 +258,7 @@
         private System.Windows.Forms.TextBox Yvalor;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnInserirValores;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataValores;
         private System.Windows.Forms.DataGridViewTextBoxColumn x;
         private System.Windows.Forms.DataGridViewTextBoxColumn y;
         private System.Windows.Forms.Button btnLimpar;
@@ -258,6 +267,7 @@
         private System.Windows.Forms.CheckBox grafico3D;
         private System.Windows.Forms.Button btnAleatório;
         private System.Windows.Forms.DataVisualization.Charting.Chart grafico;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
