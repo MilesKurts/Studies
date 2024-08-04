@@ -219,6 +219,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lambda", "Lambda\Lambda.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graficos", "Graficos\Graficos.csproj", "{95EC08AF-D4C1-44CC-BF45-78747F3723C9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeclasComando", "TeclasComando\TeclasComando.csproj", "{5E4E8580-C561-4B5B-8674-8B0273E18415}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -657,6 +659,10 @@ Global
 		{95EC08AF-D4C1-44CC-BF45-78747F3723C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95EC08AF-D4C1-44CC-BF45-78747F3723C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95EC08AF-D4C1-44CC-BF45-78747F3723C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E4E8580-C561-4B5B-8674-8B0273E18415}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E4E8580-C561-4B5B-8674-8B0273E18415}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E4E8580-C561-4B5B-8674-8B0273E18415}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E4E8580-C561-4B5B-8674-8B0273E18415}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
