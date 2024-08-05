@@ -15,6 +15,7 @@ namespace TeclasComando
         public Form1()
         {
             InitializeComponent();
+            this.Select();
         }
 
         private void btnEnter_Click(object sender, EventArgs e)
@@ -32,11 +33,11 @@ namespace TeclasComando
 
         }
 
-        private void button1_KeyPress(object sender, KeyPressEventArgs e)
+        private void form_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (e.KeyChar ==(char)13)
+            if (e.KeyChar == (char)13)
             {
-                 btnEnter_Click(sender, EventArgs.Empty);
+                btnEnter.PerformClick();
             }
         }
     }
