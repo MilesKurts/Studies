@@ -52,6 +52,7 @@
             this.button1.Text = "Tecla X";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.form_KeyPress);
             // 
             // btnEnter
             // 
@@ -63,6 +64,7 @@
             this.btnEnter.Text = "Tecla Enter";
             this.btnEnter.UseVisualStyleBackColor = true;
             this.btnEnter.Click += new System.EventHandler(this.btnEnter_Click);
+            this.btnEnter.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.form_KeyPress);
             // 
             // Form1
             // 
